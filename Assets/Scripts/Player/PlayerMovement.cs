@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public static float moveSpeed = 5;
-    public static float jumpHeight = 8;
+    public static float moveSpeed;
+    public static float jumpHeight;
     public static bool isGrounded;
     private void Update()
     {
