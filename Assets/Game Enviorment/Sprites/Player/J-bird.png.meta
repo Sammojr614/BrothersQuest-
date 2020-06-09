@@ -49,7 +49,31 @@ TextureImporter:
     second: J_FullBlink
   - first:
       213: 2023451176554147059
-    second: J-bird_7
+    second: J_Still2
+  - first:
+      213: 7204888557438397244
+    second: J_Still
+  - first:
+      213: 2376662766476801464
+    second: J_LightDown
+  - first:
+      213: -6257069608382398729
+    second: J_DarkDown
+  - first:
+      213: -70323157188448705
+    second: J_DarkUp
+  - first:
+      213: -2970648939805572622
+    second: J_LightUp
+  - first:
+      213: -3566844009168082403
+    second: J_HalfBlink
+  - first:
+      213: -7184315148385341227
+    second: J_FullBlink
+  - first:
+      213: -448917439431255726
+    second: J_Still2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,11 +163,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 215
+        y: 210
         width: 55
-        height: 100
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,11 +184,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 110
-        y: 215
+        y: 210
         width: 55
-        height: 100
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,11 +205,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 215
+        y: 210
         width: 35
-        height: 100
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,15 +222,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: J_DarkLift
+      name: J_DarkUp
       rect:
         serializedVersion: 2
         x: 180
-        y: 215
+        y: 210
         width: 35
-        height: 100
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -219,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: J_LightLift
+      name: J_LightUp
       rect:
         serializedVersion: 2
         x: 230
@@ -227,7 +251,7 @@ TextureImporter:
         width: 35
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,11 +268,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 105
+        y: 100
         width: 35
-        height: 100
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,11 +289,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 55
-        y: 105
+        y: 100
         width: 35
-        height: 100
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -282,22 +306,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: J-bird_7
+      name: J_Still2
       rect:
         serializedVersion: 2
         x: 100
-        y: 105
+        y: 100
         width: 35
-        height: 100
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fc2bd6df1eb41c10800000000000000
-      internalID: 2023451176554147059
+      spriteID: 259d831a7ff15c9f0800000000000000
+      internalID: -448917439431255726
       vertices: []
       indices: 
       edges: []
