@@ -17,6 +17,90 @@ TextureImporter:
   - first:
       213: -1410455707410947511
     second: L_LightUp
+  - first:
+      213: 656404062629631384
+    second: L_Still
+  - first:
+      213: -7011226335468325111
+    second: L_HalfBlink
+  - first:
+      213: 8887378401600303612
+    second: L_FullBlink
+  - first:
+      213: -4437071662590753527
+    second: L_DarkUp
+  - first:
+      213: 3143474893546925900
+    second: L_LightUp
+  - first:
+      213: -1101378660966039902
+    second: L_LightDown
+  - first:
+      213: -7320020284687713361
+    second: L_DarkDown
+  - first:
+      213: -9151433824098849844
+    second: L_Still
+  - first:
+      213: 5317980378291554353
+    second: L_HalfBlink
+  - first:
+      213: -8786669015553510158
+    second: L_FullBlink
+  - first:
+      213: -184961347907531442
+    second: L_DarkUp
+  - first:
+      213: -1410455707410947511
+    second: L_LightUp
+  - first:
+      213: -1101378660966039902
+    second: L_LightDown
+  - first:
+      213: -7320020284687713361
+    second: L_DarkDown
+  - first:
+      213: -9151433824098849844
+    second: L_Still
+  - first:
+      213: 5317980378291554353
+    second: L_HalfBlink
+  - first:
+      213: -8786669015553510158
+    second: L_FullBlink
+  - first:
+      213: -184961347907531442
+    second: L_DarkUp
+  - first:
+      213: -1410455707410947511
+    second: L_LightUp
+  - first:
+      213: -1101378660966039902
+    second: L_LightDown
+  - first:
+      213: -7320020284687713361
+    second: L_DarkDown
+  - first:
+      213: 656404062629631384
+    second: L_Still
+  - first:
+      213: -7011226335468325111
+    second: L_HalfBlink
+  - first:
+      213: 8887378401600303612
+    second: L_FullBlink
+  - first:
+      213: -4437071662590753527
+    second: L_DarkUp
+  - first:
+      213: 3143474893546925900
+    second: L_LightUp
+  - first:
+      213: -214020139019955557
+    second: L_lightDown
+  - first:
+      213: 702509452845043534
+    second: L_DarkDown
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,14 +194,14 @@ TextureImporter:
         width: 30
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccbe7116c639ff080800000000000000
-      internalID: -9151433824098849844
+      spriteID: 895992664040c1900800000000000000
+      internalID: 656404062629631384
       vertices: []
       indices: 
       edges: []
@@ -131,14 +215,14 @@ TextureImporter:
         width: 30
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 138c09a6af24dc940800000000000000
-      internalID: 5317980378291554353
+      spriteID: 907fb828bce13be90800000000000000
+      internalID: -7011226335468325111
       vertices: []
       indices: 
       edges: []
@@ -152,14 +236,14 @@ TextureImporter:
         width: 30
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f47009851b7f0680800000000000000
-      internalID: -8786669015553510158
+      spriteID: cf17dd3a19f465b70800000000000000
+      internalID: 8887378401600303612
       vertices: []
       indices: 
       edges: []
@@ -173,14 +257,14 @@ TextureImporter:
         width: 40
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4d4bc052a2ee6df0800000000000000
-      internalID: -184961347907531442
+      spriteID: 905835cd4da5c62c0800000000000000
+      internalID: -4437071662590753527
       vertices: []
       indices: 
       edges: []
@@ -194,14 +278,56 @@ TextureImporter:
         width: 40
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 942295cc10e0d6ce0800000000000000
-      internalID: -1410455707410947511
+      spriteID: c4f2936c2cddf9b20800000000000000
+      internalID: 3143474893546925900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_lightDown
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 155
+        width: 30
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b929fe641d5a70df0800000000000000
+      internalID: -214020139019955557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_DarkDown
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 155
+        width: 30
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fce2410a0dfb900800000000000000
+      internalID: 702509452845043534
       vertices: []
       indices: 
       edges: []
