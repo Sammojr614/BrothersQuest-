@@ -38,6 +38,30 @@ TextureImporter:
   - first:
       213: 9075618615936922486
     second: E_FullBlink
+  - first:
+      213: 760054425352627048
+    second: E_Still
+  - first:
+      213: 3672909626457725730
+    second: E_LightUp
+  - first:
+      213: -4651876955367367033
+    second: E_LightDown
+  - first:
+      213: -4823295179205489950
+    second: E_DarkUp
+  - first:
+      213: 6878929622076352245
+    second: E_DarkDown
+  - first:
+      213: -963797718590035259
+    second: E_HalfBlink
+  - first:
+      213: -1670922824416776729
+    second: E_FullBlink
+  - first:
+      213: 1360737057291125412
+    second: E_JumpUp
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -144,7 +168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E_LightLift
+      name: E_LightUp
       rect:
         serializedVersion: 2
         x: 50
@@ -186,7 +210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E_DarkLift
+      name: E_DarkUp
       rect:
         serializedVersion: 2
         x: 140
@@ -228,7 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E_BlinkHalf
+      name: E_HalfBlink
       rect:
         serializedVersion: 2
         x: 5
@@ -242,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff37eadfec19dcb60800000000000000
-      internalID: 7768025250489332735
+      spriteID: 5caeb14d417ef92f0800000000000000
+      internalID: -963797718590035259
       vertices: []
       indices: 
       edges: []
@@ -252,9 +276,30 @@ TextureImporter:
       name: E_FullBlink
       rect:
         serializedVersion: 2
-        x: 55
+        x: 54
+        y: 111
+        width: 38
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7edab8b4b80bfc8e0800000000000000
+      internalID: -1670922824416776729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_JumpUp
+      rect:
+        serializedVersion: 2
+        x: 105
         y: 115
-        width: 35
+        width: 40
         height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -263,8 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 673b7d7eb0313fd70800000000000000
-      internalID: 9075618615936922486
+      spriteID: 4a24c84e42f42e210800000000000000
+      internalID: 1360737057291125412
       vertices: []
       indices: 
       edges: []

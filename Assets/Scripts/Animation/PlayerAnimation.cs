@@ -22,6 +22,10 @@ public class PlayerAnimation : MonoBehaviour
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
+        if (Input.GetButton("Jump"))
+        {
+            PlayerAnimator.SetFloat("movement", 2f);
+        }
        
     }
 }

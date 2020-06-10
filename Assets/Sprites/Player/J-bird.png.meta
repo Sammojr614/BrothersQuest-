@@ -74,6 +74,33 @@ TextureImporter:
   - first:
       213: -448917439431255726
     second: J_Still2
+  - first:
+      213: 7204888557438397244
+    second: J_Still
+  - first:
+      213: 2376662766476801464
+    second: J_LightDown
+  - first:
+      213: -6257069608382398729
+    second: J_DarkDown
+  - first:
+      213: -7431396103229599524
+    second: J_DarkUp
+  - first:
+      213: 2351349895417501521
+    second: J_LightUp
+  - first:
+      213: -3566844009168082403
+    second: J_HalfBlink
+  - first:
+      213: -7184315148385341227
+    second: J_FullBlink
+  - first:
+      213: -448917439431255726
+    second: J_Still2
+  - first:
+      213: 6756579299272187215
+    second: J_JumpUp
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -222,48 +249,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: J_DarkUp
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 210
-        width: 35
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3e6c4c0679260ff0800000000000000
-      internalID: -70323157188448705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: J_LightUp
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 215
-        width: 35
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f18f76478226c6d0800000000000000
-      internalID: -2970648939805572622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: J_HalfBlink
       rect:
         serializedVersion: 2
@@ -322,6 +307,69 @@ TextureImporter:
       bones: []
       spriteID: 259d831a7ff15c9f0800000000000000
       internalID: -448917439431255726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_DarkUp
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 210
+        width: 35
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd017c90e906ed890800000000000000
+      internalID: -7431396103229599524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_LightUp
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 215
+        width: 35
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157130b954ca1a020800000000000000
+      internalID: 2351349895417501521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_JumpUp
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 100
+        width: 50
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d50e5231134cd50800000000000000
+      internalID: 6756579299272187215
       vertices: []
       indices: 
       edges: []

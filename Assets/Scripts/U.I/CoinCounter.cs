@@ -11,6 +11,6 @@ public class CoinCounter : MonoBehaviour
     {
         string fromJson = File.ReadAllText(Application.dataPath + "PlayerSaveData.json");
         DbManager Coinsssss = JsonUtility.FromJson<DbManager>(fromJson);
-        CurrencyDisplay.text ="Monies: " +  Coinsssss.dbCoins.ToString();
+        CurrencyDisplay.text ="x " +  Coinsssss.dbCoins.ToString();
     }
 }

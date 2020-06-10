@@ -122,6 +122,30 @@ TextureImporter:
   - first:
       213: 702509452845043534
     second: L_LightDown
+  - first:
+      213: 656404062629631384
+    second: L_Still
+  - first:
+      213: -7011226335468325111
+    second: L_HalfBlink
+  - first:
+      213: 8887378401600303612
+    second: L_FullBlink
+  - first:
+      213: -4437071662590753527
+    second: L_DarkUp
+  - first:
+      213: 3143474893546925900
+    second: L_DarkDown
+  - first:
+      213: -214020139019955557
+    second: L_LightUp
+  - first:
+      213: 702509452845043534
+    second: L_LightDown
+  - first:
+      213: -6708022703200225365
+    second: L_JumpUp
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -315,7 +339,7 @@ TextureImporter:
       name: L_LightDown
       rect:
         serializedVersion: 2
-        x: 89
+        x: 90
         y: 145
         width: 30
         height: 80
@@ -347,8 +371,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ae7ce571fd17b0f0800000000000000
-      internalID: -1101378660966039902
+      spriteID: b929fe641d5a70df0800000000000000
+      internalID: -214020139019955557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L_JumpUp
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 145
+        width: 35
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7be7e54e058e2a0800000000000000
+      internalID: -6708022703200225365
       vertices: []
       indices: 
       edges: []
