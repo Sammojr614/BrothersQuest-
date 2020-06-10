@@ -1,28 +1,10 @@
 fileFormatVersion: 2
-guid: 0890093d4c03b4eb4b41a1eda9e13d52
+guid: d2293fef319cc40b88059bab9fb76169
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4606908045521496030
-    second: Heart_Full
-  - first:
-      213: -4195582761621981391
-    second: Heart_Half
-  - first:
-      213: 4606908045521496030
-    second: Heart_Full
-  - first:
-      213: -4195582761621981391
-    second: Heart_Half
-  - first:
-      213: -6167995919846560122
-    second: Heart_Full
-  - first:
-      213: 8229536453357614128
-    second: Heart_Half
-  - first:
-      213: 516283494600122218
-    second: Heart_Empty
+      213: 2797747108834492705
+    second: O_ToyPile
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -132,13 +114,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Heart_Full
+      name: O_ToyPile
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 120
-        height: 90
+        x: 20
+        y: 295
+        width: 90
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,50 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68eac7de360e66aa0800000000000000
-      internalID: -6167995919846560122
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart_Half
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 0
-        width: 120
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03432886dcf253270800000000000000
-      internalID: 8229536453357614128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart_Empty
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 0
-        width: 120
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6f990b5a153a2700800000000000000
-      internalID: 516283494600122218
+      spriteID: 121c4712c2893d620800000000000000
+      internalID: 2797747108834492705
       vertices: []
       indices: 
       edges: []

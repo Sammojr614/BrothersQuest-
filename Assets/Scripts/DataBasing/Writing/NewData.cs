@@ -15,7 +15,7 @@ public class NewData : MonoBehaviour
     }
     void CreateOnClick()
     {
-        dataMgr.dbHealth = 2;
+        dataMgr.dbHealth = 6;
         dataMgr.dbLives = 4;
         dataMgr.dbCoins = 0;
         string tojson = JsonUtility.ToJson(dataMgr);
