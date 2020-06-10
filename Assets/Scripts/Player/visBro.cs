@@ -13,8 +13,8 @@ public class visBro : MonoBehaviour
             brothers[0].SetActive(true);
             brothers[1].SetActive(false);
             brothers[2].SetActive(false);
-            PlayerMovement.moveSpeed = 10;
-            PlayerMovement.jumpHeight = 9;
+            PlayerMovement.moveSpeed = 8;
+            PlayerMovement.jumpHeight = 6;
             //Second Bro
         } else if (BroSwitch.Bro == 2)
         {
@@ -22,7 +22,7 @@ public class visBro : MonoBehaviour
             brothers[0].SetActive(false);
             brothers[2].SetActive(false);
             PlayerMovement.moveSpeed = 5;
-            PlayerMovement.jumpHeight = 8;
+            PlayerMovement.jumpHeight = 5;
             //Putting the Bro Into The Pos of the first
             /*brothers[1].transform.position = brothers[0].transform.position;*/
 
