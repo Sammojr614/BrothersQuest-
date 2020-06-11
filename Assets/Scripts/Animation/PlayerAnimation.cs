@@ -19,6 +19,10 @@ public class PlayerAnimation : MonoBehaviour
         {
             PlayerAnimator.SetFloat("movement", 1f);
         }
+        if(Input.GetButtonUp("Horizontal") && GroundCheck.isGrounded == true)
+        {
+            PlayerAnimator.SetFloat("movement", 0);
+        }
         if (Input.GetButtonDown("moveLeft"))
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = true;

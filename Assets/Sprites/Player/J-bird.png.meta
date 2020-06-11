@@ -101,6 +101,78 @@ TextureImporter:
   - first:
       213: 6756579299272187215
     second: J_JumpUp
+  - first:
+      213: 2376662766476801464
+    second: J_LightDown
+  - first:
+      213: -6257069608382398729
+    second: J_DarkDown
+  - first:
+      213: 7204888557438397244
+    second: J_Still
+  - first:
+      213: -7431396103229599524
+    second: J_backDark
+  - first:
+      213: 2351349895417501521
+    second: J_backLight
+  - first:
+      213: -3566844009168082403
+    second: J_HalfBlink
+  - first:
+      213: -7184315148385341227
+    second: J_FullBlink
+  - first:
+      213: -448917439431255726
+    second: J_DarkStill
+  - first:
+      213: -6679392462643320388
+    second: J_JumpUp
+  - first:
+      213: -6550027510445028853
+    second: J_MidwalkDark
+  - first:
+      213: -4413638764861830534
+    second: J_MidWalkLight
+  - first:
+      213: 7204888557438397244
+    second: J_Still
+  - first:
+      213: 2376662766476801464
+    second: J_LightDown
+  - first:
+      213: -6257069608382398729
+    second: J_DarkDown
+  - first:
+      213: -70323157188448705
+    second: J_Darkback
+  - first:
+      213: -2970648939805572622
+    second: J_LightBack
+  - first:
+      213: -3566844009168082403
+    second: J_midWalkLight
+  - first:
+      213: -7184315148385341227
+    second: J_HalfBlink
+  - first:
+      213: 2023451176554147059
+    second: J_FullBlink
+  - first:
+      213: -6679392462643320388
+    second: J_StillDark
+  - first:
+      213: 2879954335552475540
+    second: J_JumpUp
+  - first:
+      213: 3239819453879300438
+    second: J_No1
+  - first:
+      213: 8798611991485557028
+    second: J_No2
+  - first:
+      213: -6963783638030327853
+    second: J_MidWalkDark
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -189,12 +261,12 @@ TextureImporter:
       name: J_LightDown
       rect:
         serializedVersion: 2
-        x: 50
-        y: 210
-        width: 55
+        x: 55
+        y: 240
+        width: 50
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,11 +283,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 110
-        y: 210
+        y: 240
         width: 55
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,11 +304,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 210
+        y: 240
         width: 35
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,15 +321,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: J_HalfBlink
+      name: J_midWalkLight
       rect:
         serializedVersion: 2
-        x: 5
-        y: 100
-        width: 35
+        x: 275
+        y: 240
+        width: 40
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,15 +342,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: J_FullBlink
+      name: J_HalfBlink
       rect:
         serializedVersion: 2
-        x: 55
-        y: 100
+        x: 5
+        y: 130
         width: 35
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,64 +363,85 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: J_Still2
+      name: J_StillDark
       rect:
         serializedVersion: 2
         x: 100
-        y: 100
+        y: 130
         width: 35
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 259d831a7ff15c9f0800000000000000
-      internalID: -448917439431255726
+      spriteID: cb929b4b1f70e43a0800000000000000
+      internalID: -6679392462643320388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: J_DarkUp
+      name: J_Darkback
       rect:
         serializedVersion: 2
         x: 180
-        y: 210
+        y: 240
         width: 35
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd017c90e906ed890800000000000000
-      internalID: -7431396103229599524
+      spriteID: f3e6c4c0679260ff0800000000000000
+      internalID: -70323157188448705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: J_LightUp
+      name: J_LightBack
       rect:
         serializedVersion: 2
         x: 230
-        y: 215
+        y: 240
         width: 35
-        height: 100
+        height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 157130b954ca1a020800000000000000
-      internalID: 2351349895417501521
+      spriteID: 2f18f76478226c6d0800000000000000
+      internalID: -2970648939805572622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_FullBlink
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 130
+        width: 35
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc2bd6df1eb41c10800000000000000
+      internalID: 2023451176554147059
       vertices: []
       indices: 
       edges: []
@@ -358,18 +451,81 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 140
-        y: 100
+        y: 130
         width: 50
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4d50e5231134cd50800000000000000
-      internalID: 6756579299272187215
+      spriteID: 49193f3a537a7f720800000000000000
+      internalID: 2879954335552475540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_No1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 130
+        width: 45
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65130e4c0a626fc20800000000000000
+      internalID: 3239819453879300438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_No2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 130
+        width: 45
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4292dfc3df2fa1a70800000000000000
+      internalID: 8798611991485557028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_MidWalkDark
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 15
+        width: 40
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df568a4dabab5f90800000000000000
+      internalID: -6963783638030327853
       vertices: []
       indices: 
       edges: []
