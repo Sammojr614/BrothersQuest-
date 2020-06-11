@@ -8,6 +8,27 @@ TextureImporter:
   - first:
       213: 5848064539680731454
     second: Coin_Side
+  - first:
+      213: -3338749442709606003
+    second: coinForward
+  - first:
+      213: 5848064539680731454
+    second: coinSide
+  - first:
+      213: -2652133911391862278
+    second: coinMid
+  - first:
+      213: -5697401496198723150
+    second: coinForward
+  - first:
+      213: -5952844372493904095
+    second: coinSide
+  - first:
+      213: -8440888398662625935
+    second: coinMidL
+  - first:
+      213: 5522397121026081838
+    second: coinMidR
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,43 +138,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coin_Forward
+      name: coinForward
       rect:
         serializedVersion: 2
-        x: 10
-        y: 90
+        x: 0
+        y: 65
         width: 60
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d81b24142116aa1d0800000000000000
-      internalID: -3338749442709606003
+      spriteID: 2b9cb4c7683cee0b0800000000000000
+      internalID: -5697401496198723150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coin_Side
+      name: coinSide
       rect:
         serializedVersion: 2
-        x: 100
-        y: 90
+        x: 90
+        y: 65
         width: 20
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e317a37e6bf782150800000000000000
-      internalID: 5848064539680731454
+      spriteID: 127515e259f336da0800000000000000
+      internalID: -5952844372493904095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coinMidL
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1759ff029b0fbda80800000000000000
+      internalID: -8440888398662625935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coinMidR
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2446633cee73ac40800000000000000
+      internalID: 5522397121026081838
       vertices: []
       indices: 
       edges: []
