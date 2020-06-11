@@ -10,8 +10,12 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerAnimator.SetFloat("movement", 0);
-        if (Input.GetButton("Horizontal"))
+        if(GroundCheck.isGrounded == true)
+        {
+            PlayerAnimator.SetFloat("movement", 0);
+        }
+        
+        if (Input.GetButton("Horizontal") && GroundCheck.isGrounded == true)
         {
             PlayerAnimator.SetFloat("movement", 1f);
         }
@@ -24,7 +28,10 @@ public class PlayerAnimation : MonoBehaviour
         }
         if (Input.GetButton("Jump"))
         {
-            PlayerAnimator.SetFloat("movement", 2f);
+          if(GroundCheck.isGrounded != true)
+            {
+                PlayerAnimator.SetFloat("movement", 2f);
+            }
         }
        
     }

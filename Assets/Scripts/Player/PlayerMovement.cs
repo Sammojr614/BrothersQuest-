@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public static bool isGrounded;
     private void Update()
     {
-        Jump();
+        Jump();   
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * moveSpeed;
     }
