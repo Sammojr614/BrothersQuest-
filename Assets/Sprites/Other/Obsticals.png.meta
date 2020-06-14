@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: -5212471470272289304
     second: O_Legohead
+  - first:
+      213: -4058528424131242860
+    second: O_ToyPile1
+  - first:
+      213: -3651536119021757619
+    second: O_ToyPile 2
+  - first:
+      213: -8830961776701297878
+    second: O_LegoHead
+  - first:
+      213: -796194729242491567
+    second: O_stud
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,11 +135,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: O_ToyPileone
+      name: O_ToyPile1
       rect:
         serializedVersion: 2
         x: 0
-        y: 105
+        y: 120
         width: 90
         height: 35
       alignment: 0
@@ -137,18 +149,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 121c4712c2893d620800000000000000
-      internalID: 2797747108834492705
+      spriteID: 494d4d8b6e53da7c0800000000000000
+      internalID: -4058528424131242860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: O_ToyPiletwo
+      name: O_ToyPile 2
       rect:
         serializedVersion: 2
         x: 100
-        y: 105
+        y: 120
         width: 90
         height: 35
       alignment: 0
@@ -158,18 +170,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8394902d8ee4b2f40800000000000000
-      internalID: 5704740114858068280
+      spriteID: d4b13351f33235dc0800000000000000
+      internalID: -3651536119021757619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: O_Legohead
+      name: O_LegoHead
       rect:
         serializedVersion: 2
         x: 55
-        y: 0
+        y: 15
         width: 85
         height: 80
       alignment: 0
@@ -179,8 +191,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e5ef8c80d499a7b0800000000000000
-      internalID: -5212471470272289304
+      spriteID: a2baaa27d0f127580800000000000000
+      internalID: -8830961776701297878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: O_stud
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1558677bc1953f4f0800000000000000
+      internalID: -796194729242491567
       vertices: []
       indices: 
       edges: []
