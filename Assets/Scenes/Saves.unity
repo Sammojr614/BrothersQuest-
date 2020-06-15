@@ -1460,6 +1460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrencyDisplay: {fileID: 1255870107}
+  LivesDisplay: {fileID: 631447433}
 --- !u!1 &2142945223
 GameObject:
   m_ObjectHideFlags: 0

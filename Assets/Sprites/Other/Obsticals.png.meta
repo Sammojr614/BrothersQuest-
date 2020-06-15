@@ -26,6 +26,21 @@ TextureImporter:
   - first:
       213: -796194729242491567
     second: O_stud
+  - first:
+      213: 2797747108834492705
+    second: O_ToyPile 1
+  - first:
+      213: 5704740114858068280
+    second: O_ToyPlie2
+  - first:
+      213: -5212471470272289304
+    second: O_LegoHead Shoot
+  - first:
+      213: 6181384209660532518
+    second: O_LegoHeadIdle
+  - first:
+      213: -1962080605270839136
+    second: O_Stud
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,7 +150,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: O_ToyPile1
+      name: O_ToyPile 1
       rect:
         serializedVersion: 2
         x: 0
@@ -149,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 494d4d8b6e53da7c0800000000000000
-      internalID: -4058528424131242860
+      spriteID: 121c4712c2893d620800000000000000
+      internalID: 2797747108834492705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: O_ToyPile 2
+      name: O_ToyPlie2
       rect:
         serializedVersion: 2
         x: 100
@@ -170,14 +185,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4b13351f33235dc0800000000000000
-      internalID: -3651536119021757619
+      spriteID: 8394902d8ee4b2f40800000000000000
+      internalID: 5704740114858068280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: O_LegoHead
+      name: O_LegoHead Shoot
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 45
+        width: 85
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5ef8c80d499a7b0800000000000000
+      internalID: -5212471470272289304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: O_LegoHeadIdle
       rect:
         serializedVersion: 2
         x: 55
@@ -191,18 +227,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2baaa27d0f127580800000000000000
-      internalID: -8830961776701297878
+      spriteID: 62756053030b8c550800000000000000
+      internalID: 6181384209660532518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: O_stud
+      name: O_Stud
       rect:
         serializedVersion: 2
         x: 170
-        y: 0
+        y: 1
         width: 40
         height: 40
       alignment: 0
@@ -212,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1558677bc1953f4f0800000000000000
-      internalID: -796194729242491567
+      spriteID: 0a0f526c51a45c4e0800000000000000
+      internalID: -1962080605270839136
       vertices: []
       indices: 
       edges: []

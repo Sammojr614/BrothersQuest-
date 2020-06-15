@@ -11,7 +11,14 @@ public class NewData : MonoBehaviour
     DbManager dataMgr = DbManager.Instance;
     void Start()
     {
+        if(File.Exists(Application.dataPath + "PlayerSaveData.json"))
+        {
+            CreateButton.enabled = false;
+        }else if(!File.Exists(Application.dataPath + "PlayerSaveData.json")) {
+            CreateButton.enabled = true;
+        }
         CreateButton.onClick.AddListener(CreateOnClick);
+
     }
     void CreateOnClick()
     {
