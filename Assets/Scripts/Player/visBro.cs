@@ -7,6 +7,19 @@ public class visBro : MonoBehaviour
     public List<GameObject> brothers = new List<GameObject>();
     private void Update()
     {
+        //all of these are for putting the bros where the prevously used bro was 
+        if (Input.GetButton("BroSwitch") || Input.GetButton("BroSwitchNeg") && BroSwitch.Bro == 2)
+        {
+            brothers[1].transform.position = brothers[0].transform.position;
+        }
+        if (Input.GetButton("BroSwitch") || Input.GetButton("BroSwitchNeg") && BroSwitch.Bro == 3)
+        {
+            brothers[2].transform.position = brothers[1].transform.position;
+        }
+        if (Input.GetButton("BroSwitch") || Input.GetButton("BroSwitchNeg") && BroSwitch.Bro == 1)
+        {
+            brothers[0].transform.position = brothers[2].transform.position;
+        }
         //First Bro
         if (BroSwitch.Bro == 1)
         {

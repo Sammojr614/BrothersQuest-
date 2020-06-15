@@ -5775,3 +5775,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrencyDisplay: {fileID: 921986646}
+  LivesDisplay: {fileID: 446878291}
