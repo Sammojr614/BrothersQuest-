@@ -2262,6 +2262,8 @@ MonoBehaviour:
     type: 3}
   LegoHeadShoot: {fileID: -5212471470272289304, guid: d2293fef319cc40b88059bab9fb76169,
     type: 3}
+  xMin: -5
+  xMax: 5
 --- !u!61 &1143473855
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2275,7 +2277,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.8643694, y: -0.33362436}
+  m_Offset: {x: -1.8643694, y: -0.06512451}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2286,7 +2288,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.728739, y: 1.6672487}
+  m_Size: {x: 4.728739, y: 5.220146}
   m_EdgeRadius: 0
 --- !u!1 &1164325194
 GameObject:
