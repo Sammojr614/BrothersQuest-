@@ -59,30 +59,7 @@ public class Shoot : MonoBehaviour
             Stud.transform.position = LegoHead.transform.position;
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            Stud.SetActive(false);
-            Stud.transform.position = LegoHead.transform.position;
-        }
+    
+    
     }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            Stud.transform.position += change;
-            LegoHead.sprite = LegoHeadShoot;
-            Stud.SetActive(true);
 
-
-        }
-        else
-        {
-            LegoHead.sprite = LegoHeadIdle;
-            Stud.SetActive(false);
-            Stud.transform.position = LegoHead.transform.position;
-
-        }
-    }
-}
