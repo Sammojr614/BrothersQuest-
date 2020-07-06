@@ -13,11 +13,11 @@ public class NewData : MonoBehaviour
     {
         if(File.Exists(Application.dataPath + "PlayerSaveData.json"))
         {
-            newData.enabled = false;
+            newData.gameObject.SetActive(false);
         }
         else
         {
-            newData.enabled = true;
+            newData.gameObject.SetActive(true);
         }
         newData.onClick.AddListener(createOnClick);
     }
