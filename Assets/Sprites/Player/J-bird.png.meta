@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: 28bdcb26f55154d93ae8efd2f301fd04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7204888557438397244
+    second: J-bird
+  - first:
+      213: 9056250817289840334
+    second: J_LightDown
+  - first:
+      213: -8661129124616746724
+    second: J_DarkDown
+  - first:
+      213: -7431396103229599524
+    second: J_DarkLift
+  - first:
+      213: 6146884482224141218
+    second: J_Still
+  - first:
+      213: 2376662766476801464
+    second: J_LightDown
+  - first:
+      213: -6257069608382398729
+    second: J_DarkDown
+  - first:
+      213: 7204888557438397244
+    second: J_Still
+  - first:
+      213: 2351349895417501521
+    second: J_LightLift
+  - first:
+      213: -70323157188448705
+    second: J_DarkLift
+  - first:
+      213: -2970648939805572622
+    second: J_LightLift
+  - first:
+      213: 5518257857750228497
+    second: J_HalfBlink
+  - first:
+      213: 232233157116902738
+    second: J_FullBlink
+  - first:
+      213: -3566844009168082403
+    second: J_HalfBlink
+  - first:
+      213: -7184315148385341227
+    second: J_FullBlink
+  - first:
+      213: 2023451176554147059
+    second: J_Still2
+  - first:
+      213: 7204888557438397244
+    second: J_Still
+  - first:
+      213: 2376662766476801464
+    second: J_LightDown
+  - first:
+      213: -6257069608382398729
+    second: J_DarkDown
+  - first:
+      213: -70323157188448705
+    second: J_DarkUp
+  - first:
+      213: -2970648939805572622
+    second: J_LightUp
+  - first:
+      213: -3566844009168082403
+    second: J_HalfBlink
+  - first:
+      213: -7184315148385341227
+    second: J_FullBlink
+  - first:
+      213: -448917439431255726
+    second: J_Still2
+  - first:
+      213: 7204888557438397244
+    second: J_Still
+  - first:
+      213: 2376662766476801464
+    second: J_LightDown
+  - first:
+      213: -6257069608382398729
+    second: J_DarkDown
+  - first:
+      213: -7431396103229599524
+    second: J_DarkUp
+  - first:
+      213: 2351349895417501521
+    second: J_LightUp
+  - first:
+      213: -3566844009168082403
+    second: J_HalfBlink
+  - first:
+      213: -7184315148385341227
+    second: J_FullBlink
+  - first:
+      213: -448917439431255726
+    second: J_Still2
+  - first:
+      213: 6756579299272187215
+    second: J_JumpUp
+  - first:
+      213: 2376662766476801464
+    second: J_LightDown
+  - first:
+      213: -6257069608382398729
+    second: J_DarkDown
+  - first:
+      213: 7204888557438397244
+    second: J_Still
+  - first:
+      213: -7431396103229599524
+    second: J_backDark
+  - first:
+      213: 2351349895417501521
+    second: J_backLight
+  - first:
+      213: -3566844009168082403
+    second: J_HalfBlink
+  - first:
+      213: -7184315148385341227
+    second: J_FullBlink
+  - first:
+      213: -448917439431255726
+    second: J_DarkStill
+  - first:
+      213: -6679392462643320388
+    second: J_JumpUp
+  - first:
+      213: -6550027510445028853
+    second: J_MidwalkDark
+  - first:
+      213: -4413638764861830534
+    second: J_MidWalkLight
+  - first:
+      213: 7204888557438397244
+    second: J_Still
+  - first:
+      213: 2376662766476801464
+    second: J_LightDown
+  - first:
+      213: -6257069608382398729
+    second: J_DarkDown
+  - first:
+      213: -70323157188448705
+    second: J_Darkback
+  - first:
+      213: -2970648939805572622
+    second: J_LightBack
+  - first:
+      213: -3566844009168082403
+    second: J_midWalkLight
+  - first:
+      213: -7184315148385341227
+    second: J_HalfBlink
+  - first:
+      213: 2023451176554147059
+    second: J_FullBlink
+  - first:
+      213: -6679392462643320388
+    second: J_StillDark
+  - first:
+      213: 2879954335552475540
+    second: J_JumpUp
+  - first:
+      213: 3239819453879300438
+    second: J_No1
+  - first:
+      213: 8798611991485557028
+    second: J_No2
+  - first:
+      213: -6963783638030327853
+    second: J_MidWalkDark
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: J_LightDown
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 240
+        width: 50
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b53fbaa13a9bf020800000000000000
+      internalID: 2376662766476801464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_DarkDown
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 240
+        width: 55
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe7971b75c6a29a0800000000000000
+      internalID: -6257069608382398729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_Still
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 240
+        width: 35
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b646848f7ecf360800000000000000
+      internalID: 7204888557438397244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_midWalkLight
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 243
+        width: 40
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a6e488546008ec0800000000000000
+      internalID: -3566844009168082403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_HalfBlink
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 130
+        width: 35
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0b80acf6f2c4c90800000000000000
+      internalID: -7184315148385341227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_StillDark
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 130
+        width: 35
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb929b4b1f70e43a0800000000000000
+      internalID: -6679392462643320388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_Darkback
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 241
+        width: 50
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e6c4c0679260ff0800000000000000
+      internalID: -70323157188448705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_LightBack
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 242
+        width: 48
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f18f76478226c6d0800000000000000
+      internalID: -2970648939805572622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_FullBlink
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 130
+        width: 35
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc2bd6df1eb41c10800000000000000
+      internalID: 2023451176554147059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_JumpUp
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 130
+        width: 50
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49193f3a537a7f720800000000000000
+      internalID: 2879954335552475540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_No1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 130
+        width: 45
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65130e4c0a626fc20800000000000000
+      internalID: 3239819453879300438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_No2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 130
+        width: 45
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4292dfc3df2fa1a70800000000000000
+      internalID: 8798611991485557028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: J_MidWalkDark
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 15
+        width: 40
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df568a4dabab5f90800000000000000
+      internalID: -6963783638030327853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
