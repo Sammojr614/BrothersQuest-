@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.03773582, g: 0.036845826, b: 0.036845826, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -954,8 +954,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1432475296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73efd587a39404163b842f3cc14e4136, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fa6747732b94754d8b04539417ef63b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneButton: {fileID: 1432475298}
-  sceneName: Saves
+  start: {fileID: 1432475298}
