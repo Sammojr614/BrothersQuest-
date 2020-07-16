@@ -18,8 +18,7 @@ public class PlayerAnimation : MonoBehaviour
         if (Input.GetButton("Horizontal") && GroundCheck.isGrounded == true)
         {
             PlayerAnimator.SetFloat("movement", 1f);
-        }
-        if(Input.GetButtonUp("Horizontal") && GroundCheck.isGrounded == true)
+        }else if(Input.GetButtonUp("Horizontal") && GroundCheck.isGrounded == true)
         {
             PlayerAnimator.SetFloat("movement", 0);
         }

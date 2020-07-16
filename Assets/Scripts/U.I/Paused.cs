@@ -7,16 +7,24 @@ public class Paused : MonoBehaviour
 {
     public GameObject PauseMenu;
     public Button resumeButton;
+    public static bool paused;
     private void Start()
     {
+        resumeGame();
         PauseMenu.SetActive(false);
         resumeButton.onClick.AddListener(resumeGame);
+        
     }
     private void Update()
     {
-        if (Input.GetButton("Cancel"))
+        if (Input.GetButtonDown("Cancel")&& paused == false)
         {
             pauseGame();
+            paused = true;
+        }else if(Input.GetButtonDown("Cancel")&& paused == true)
+        {
+            resumeGame();
+            paused = false;
         }
     }
     void pauseGame()

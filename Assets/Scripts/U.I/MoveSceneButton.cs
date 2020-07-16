@@ -12,7 +12,6 @@ public class MoveSceneButton : MonoBehaviour
    
     void Start()
     {
-      
         SceneButton.onClick.AddListener(pressScene);
     }
 
