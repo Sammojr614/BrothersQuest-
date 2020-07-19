@@ -10,15 +10,17 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GroundCheck.isGrounded == true)
+        Debug.Log(PlayerAnimator.GetFloat("movement"));
+        if(GroundCheck.isGrounded != false && !Input.GetButtonDown("Horizontal"))
         {
             PlayerAnimator.SetFloat("movement", 0);
         }
-        
+       
         if (Input.GetButton("Horizontal") && GroundCheck.isGrounded == true)
         {
             PlayerAnimator.SetFloat("movement", 1f);
-        }else if(Input.GetButtonUp("Horizontal") && GroundCheck.isGrounded == true)
+        }
+        if (Input.GetButtonUp("Horizontal") && GroundCheck.isGrounded ==  true)
         {
             PlayerAnimator.SetFloat("movement", 0);
         }
