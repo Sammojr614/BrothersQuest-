@@ -10,6 +10,7 @@ public class GameOver : MonoBehaviour
         if(Health.PlayerLives <= 0)
         {
             SceneManager.LoadScene("GameOver");
+            Cursor.visible = true;
         }
     }
 }

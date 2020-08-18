@@ -8,9 +8,11 @@ using UnityEngine.SceneManagement;
 public class NewData : MonoBehaviour
 {
     public Button CreateButton;
+    public GameObject TutDialog;
     DbManager dataMgr = DbManager.Instance;
     void Start()
     {
+        TutDialog.SetActive(false);
         if(File.Exists(Application.dataPath + "PlayerSaveData.json"))
         {
             CreateButton.enabled = false;
@@ -22,12 +24,19 @@ public class NewData : MonoBehaviour
     }
     void CreateOnClick()
     {
+       if(playerTut.playerHasPlayed == false)
+        {
+            dataMgr.dbLocation = "Tut1";
+        }else if(playerTut.playerHasPlayed == true)
+        {
+            dataMgr.dbLocation = "Testing";
+        }
         dataMgr.dbHealth = 6;
         dataMgr.dbLives = 4;
         dataMgr.dbCoins = 0;
         string tojson = JsonUtility.ToJson(dataMgr);
         File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
-        SceneManager.LoadScene("Testing");
+        TutDialog.SetActive(true);
     }
 
   
