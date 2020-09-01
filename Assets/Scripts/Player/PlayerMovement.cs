@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetButtonDown("PlayerJump"))
+        if (Input.GetButtonDown("PlayerJump") && GroundCheck.isGrounded == true)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(0f, jumpHeight, 0f),ForceMode2D.Impulse);
         }
