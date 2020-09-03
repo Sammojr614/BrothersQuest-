@@ -16,4 +16,5 @@ public class CoinCounter : MonoBehaviour
         LivesDisplay.text = "Lives: " + Coinsssss.dbLives.ToString();
         
     }
+    
 }
