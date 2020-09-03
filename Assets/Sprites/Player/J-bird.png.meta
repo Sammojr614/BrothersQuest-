@@ -173,6 +173,45 @@ TextureImporter:
   - first:
       213: -6963783638030327853
     second: J_MidWalkDark
+  - first:
+      213: 7204888557438397244
+    second: J-bird_0
+  - first:
+      213: 2376662766476801464
+    second: J_Crouch
+  - first:
+      213: -6257069608382398729
+    second: J-bird_2
+  - first:
+      213: -7431396103229599524
+    second: J-bird_3
+  - first:
+      213: 2351349895417501521
+    second: J-bird_4
+  - first:
+      213: -5189916883789697999
+    second: J-bird_5
+  - first:
+      213: -7184315148385341227
+    second: J-bird_6
+  - first:
+      213: 2023451176554147059
+    second: J-bird_7
+  - first:
+      213: 6190704808045780698
+    second: J-bird_8
+  - first:
+      213: -6550027510445028853
+    second: J-bird_9
+  - first:
+      213: -4413638764861830534
+    second: J-bird_10
+  - first:
+      213: -4282967301691094951
+    second: J-bird_11
+  - first:
+      213: -6882798581332380119
+    second: J-bird_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -258,13 +297,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: J_LightDown
+      name: J_Crouch
       rect:
         serializedVersion: 2
-        x: 55
-        y: 240
-        width: 50
-        height: 105
+        x: 57
+        y: 14
+        width: 62
+        height: 101
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,7 +364,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 275
-        y: 243
+        y: 241
         width: 40
         height: 105
       alignment: 0

@@ -37,6 +37,10 @@ public class PlayerAnimation : MonoBehaviour
                 PlayerAnimator.SetFloat("movement", 2f);
             }
         }
+        if (Input.GetButton("Crouch")&& GroundCheck.isGrounded == true)
+        {
+            PlayerAnimator.SetFloat("movement", 3f);
+        }
        
     }
 }

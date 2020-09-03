@@ -62,6 +62,12 @@ TextureImporter:
   - first:
       213: 1360737057291125412
     second: E_JumpUp
+  - first:
+      213: 760054425352627048
+    second: E_Crouch
+  - first:
+      213: -2852534367474002479
+    second: E_Still
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -147,13 +153,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: E_Still
+      name: E_Crouch
       rect:
         serializedVersion: 2
-        x: 5
-        y: 220
-        width: 35
-        height: 95
+        x: 170
+        y: 115
+        width: 45
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,6 +316,27 @@ TextureImporter:
       bones: []
       spriteID: 4a24c84e42f42e210800000000000000
       internalID: 1360737057291125412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_Still
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 220
+        width: 34
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d55e1d2b13c968d0800000000000000
+      internalID: -2852534367474002479
       vertices: []
       indices: 
       edges: []
