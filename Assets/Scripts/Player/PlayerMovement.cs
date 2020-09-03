@@ -21,11 +21,4 @@ public class PlayerMovement : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(0f, jumpHeight, 0f),ForceMode2D.Impulse);
         }
     }
-    void crouch()
-    {
-        if (Input.GetButtonDown("Crouch") && GroundCheck.isGrounded == true)
-        {
-            moveSpeed = moveSpeed - 2;
-        }
-    }
 }

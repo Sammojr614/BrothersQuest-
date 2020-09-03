@@ -146,18 +146,6 @@ TextureImporter:
   - first:
       213: -6708022703200225365
     second: L_JumpUp
-  - first:
-      213: 656404062629631384
-    second: L_Still
-  - first:
-      213: -7011226335468325111
-    second: Lou-Lou_1
-  - first:
-      213: 656404062629631384
-    second: L_Still
-  - first:
-      213: -9151433824098849844
-    second: L_Still
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -246,12 +234,12 @@ TextureImporter:
       name: L_Still
       rect:
         serializedVersion: 2
-        x: 1
-        y: 229
-        width: 39
-        height: 82
+        x: 5
+        y: 230
+        width: 30
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,7 +260,7 @@ TextureImporter:
         width: 30
         height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,7 +281,7 @@ TextureImporter:
         width: 30
         height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,7 +302,7 @@ TextureImporter:
         width: 30
         height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,7 +323,7 @@ TextureImporter:
         width: 30
         height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -356,7 +344,7 @@ TextureImporter:
         width: 30
         height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,7 +365,7 @@ TextureImporter:
         width: 30
         height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -398,7 +386,7 @@ TextureImporter:
         width: 35
         height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -406,27 +394,6 @@ TextureImporter:
       bones: []
       spriteID: ba7be7e54e058e2a0800000000000000
       internalID: -6708022703200225365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: L_Crouch
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 235
-        width: 40
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ccbe7116c639ff080800000000000000
-      internalID: -9151433824098849844
       vertices: []
       indices: 
       edges: []
