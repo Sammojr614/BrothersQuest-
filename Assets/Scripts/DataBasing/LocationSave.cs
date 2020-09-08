@@ -17,5 +17,5 @@ public class LocationSave : MonoBehaviour
         File.WriteAllText(Application.dataPath + "PlayerSaveData.json",jsonString);
     }
 
-  
+
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class Health : MonoBehaviour
         DbManager loadHealth = JsonUtility.FromJson<DbManager>(load);
         PlayerHealth = loadHealth.dbHealth;
         PlayerLives = loadHealth.dbLives;
+        
 
     }
     private void Update()
@@ -28,6 +30,7 @@ public class Health : MonoBehaviour
         healthTracker.dbHealth = PlayerHealth;
         healthTracker.dbLives = PlayerLives;
         healthTracker.dbCoins = Coin.PlayerCoins;
+        healthTracker.dbLocation = SceneManager.GetActiveScene().name;
         string tojson = JsonUtility.ToJson(healthTracker);
         File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
         string healthUpdate = File.ReadAllText(Application.dataPath + "PlayerSaveData.json");
