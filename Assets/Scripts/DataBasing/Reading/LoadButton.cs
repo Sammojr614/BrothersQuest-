@@ -10,13 +10,6 @@ public class LoadButton : MonoBehaviour
     public Button Load;
     void Start()
     {
-        if(File.Exists(Application.dataPath + "PlayerSaveData.json"))
-        {
-            Load.enabled = true;
-        }else if(!File.Exists(Application.dataPath + "PlayerSaveData.json"))
-        {
-            Load.enabled = false;
-        }
         Load.onClick.AddListener(LoadLocation);
     }
 

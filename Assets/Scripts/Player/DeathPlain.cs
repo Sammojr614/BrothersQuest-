@@ -14,7 +14,7 @@ public class DeathPlain : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             player.transform.position = PlayerSpawn.transform.position;
-            Health.PlayerLives--;
+            Health.PlayerHealth--;
             dataMgr.dbHealth = Health.PlayerHealth;
             dataMgr.dbLives = Health.PlayerLives;
             dataMgr.dbCoins = Coin.PlayerCoins;

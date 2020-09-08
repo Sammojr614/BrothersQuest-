@@ -29,7 +29,7 @@ public class Health : MonoBehaviour
         healthTracker.dbLives = PlayerLives;
         healthTracker.dbCoins = Coin.PlayerCoins;
         string tojson = JsonUtility.ToJson(healthTracker);
-        File.WriteAllText(Application.dataPath + "PlayeraSaveData.json", tojson);
+        File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
         string healthUpdate = File.ReadAllText(Application.dataPath + "PlayerSaveData.json");
         DbManager updateHealth = JsonUtility.FromJson<DbManager>(healthUpdate);
         LivesDisplay.text = "Lives: "+ updateHealth.dbLives.ToString();
