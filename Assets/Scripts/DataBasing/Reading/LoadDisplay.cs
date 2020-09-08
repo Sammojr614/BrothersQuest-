@@ -18,8 +18,17 @@ public class LoadDisplay : MonoBehaviour
         DbManager forDisplays = JsonUtility.FromJson<DbManager>(fromJson);
         LivesDisplay.text ="Lives: "+  forDisplays.dbHealth.ToString();
         MoneyDisplay.text = "x: " +  forDisplays.dbCoins.ToString();
-        LocationDisplay.text ="Where: " + forDisplays.dbLocation;
-        if(forDisplays.dbHealth == 6)
+        //Something to say something besides Tut# in The Display
+        if(forDisplays.dbLocation == "Tut1"|| forDisplays.dbLocation == "Tut2"|| forDisplays.dbLocation == "Tut3"|| forDisplays.dbLocation == "Tut4")
+        {
+            LocationDisplay.text = "Where: The Tutorial";
+        }
+        else
+        {
+            LocationDisplay.text ="Where: " +  forDisplays.dbLocation;
+        }
+        //For the Health, i had to do it differently 
+        if (forDisplays.dbHealth == 6)
         {
             healthDisplay.text = "Health: Full";
         }else if(forDisplays.dbHealth == 3)

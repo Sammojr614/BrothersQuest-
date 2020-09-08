@@ -29,7 +29,7 @@ public class NewData : MonoBehaviour
             dataMgr.dbLocation = "Tut1";
         }else if(playerTut.playerHasPlayed == true)
         {
-            dataMgr.dbLocation = "Testing";
+            dataMgr.dbLocation = "Hub";
         }
         dataMgr.dbHealth = 6;
         dataMgr.dbLives = 4;

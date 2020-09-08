@@ -16,7 +16,7 @@ public class playerTut : MonoBehaviour
     }
     void yesClick()
     {
-        SceneManager.LoadScene("Testing");
+        SceneManager.LoadScene("Hub");
         playerHasPlayed = true;
     }
     void noClick()
