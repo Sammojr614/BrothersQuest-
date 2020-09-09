@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class Coin : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class Coin : MonoBehaviour
             dbMgr.dbCoins = PlayerCoins;
             dbMgr.dbHealth = Health.PlayerHealth;
             dbMgr.dbLives = Health.PlayerLives;
+            dbMgr.dbLocation = SceneManager.GetActiveScene().name;
             string tojson = JsonUtility.ToJson(dbMgr);
             File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
 
