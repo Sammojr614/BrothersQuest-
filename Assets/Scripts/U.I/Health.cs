@@ -73,7 +73,10 @@ public class Health : MonoBehaviour
         }
         if(PlayerLives < 0) {
             PlayerLives = 0;
+            
         }
+    
+
 
     }
 }

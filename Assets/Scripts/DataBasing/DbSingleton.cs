@@ -24,5 +24,5 @@ public class DbManager
     public int dbLives;
     public int dbCoins;
     public string dbLocation;
-    public int dbHasplayed;
+    public int dbBro;
 }

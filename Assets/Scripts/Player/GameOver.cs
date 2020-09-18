@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 using UnityEngine.SceneManagement;
 
-public class GameOver : MonoBehaviour
+public class gameover : MonoBehaviour
 {
     private void Update()
     {
-        if(Health.PlayerLives <= 0)
+        string fromDb = File.ReadAllText(Application.dataPath + "PlayerSaveData.json");
+        DbManager loadLives = JsonUtility.FromJson<DbManager>(fromDb);
+        if(loadLives.dbLives <= 0)
         {
             SceneManager.LoadScene("GameOver");
-            Cursor.visible = true;
         }
     }
 }

@@ -34,6 +34,7 @@ public class NewData : MonoBehaviour
         dataMgr.dbHealth = 6;
         dataMgr.dbLives = 4;
         dataMgr.dbCoins = 0;
+        dataMgr.dbBro = 1; 
         string tojson = JsonUtility.ToJson(dataMgr);
         File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
         TutDialog.SetActive(true);
