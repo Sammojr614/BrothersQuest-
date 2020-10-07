@@ -18,6 +18,10 @@ public class LoadButton : MonoBehaviour
         string location = File.ReadAllText(Application.dataPath + "PlayerSaveData.json");
         DbManager fromjson = JsonUtility.FromJson<DbManager>(location);
         BroSwitch.Bro = fromjson.dbBro;
+        if(fromjson.dbBro == 0)
+        {
+            BroSwitch.Bro = 1;
+        }
         SceneManager.LoadScene(fromjson.dbLocation);
         
     }

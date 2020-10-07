@@ -16,6 +16,7 @@ public class Health : MonoBehaviour
     DbManager healthTracker = DbManager.Instance;
     public Text LivesDisplay;
     
+    
     private void Start()
     {
         string load = File.ReadAllText(Application.dataPath + "PlayerSaveData.json");

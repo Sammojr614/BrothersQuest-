@@ -10,8 +10,10 @@ public class NewData : MonoBehaviour
     public Button CreateButton;
     public GameObject TutDialog;
     DbManager dataMgr = DbManager.Instance;
+    LevelIndex lvlIndx = LevelIndex.Instance;
     void Start()
     {
+                            /*Player Data */
         TutDialog.SetActive(false);
         if(File.Exists(Application.dataPath + "PlayerSaveData.json"))
         {
@@ -24,6 +26,7 @@ public class NewData : MonoBehaviour
     }
     void CreateOnClick()
     {
+                 /*Player Data*/
        if(playerTut.playerHasPlayed == false)
         {
             dataMgr.dbLocation = "Tut1";
@@ -38,6 +41,17 @@ public class NewData : MonoBehaviour
         string tojson = JsonUtility.ToJson(dataMgr);
         File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
         TutDialog.SetActive(true);
+
+
+                    /*Level Index*/
+        if(!File.Exists(Application.dataPath + "LevelIndex.json"))
+        {
+            lvlIndx.Lvl1Comp = false;
+            lvlIndx.Lvl2Comp = false;
+            lvlIndx.Lvl3Comp = false;
+            string jsonString = JsonUtility.ToJson(lvlIndx);
+            File.WriteAllText(Application.dataPath + "LevelIndex.json", jsonString);
+        }
     }
 
   
