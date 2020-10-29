@@ -11,4 +11,5 @@ public class playerSave
     public int savedCoins;
     public string savedLocation;
     public int savedBro;
+    public int collectedCharge;
 }

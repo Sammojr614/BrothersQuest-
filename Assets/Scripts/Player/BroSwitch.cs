@@ -15,7 +15,7 @@ public class BroSwitch : MonoBehaviour
     }
     private void Update()
     {
-        print(Bro);
+       
         if (Input.GetButtonDown("BroSwitch") && Bro < 3)
         {
             Bro++;
