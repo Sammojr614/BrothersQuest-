@@ -5,39 +5,55 @@ using System.IO;
 
 public class BroSwitch : MonoBehaviour
 {
-    public static int Bro = 1;
-    DbManager dataMgr = DbManager.Instance;
-    // Update is called once per frame
-    void Update()
+    public static int Bro;
+    public List<GameObject> Bros = new List<GameObject>();
+    private void Start()
     {
+        string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
+        playerSave savedData = JsonUtility.FromJson<playerSave>(file);
+        Bro = savedData.savedBro;
+    }
+    private void Update()
+    {
+        print(Bro);
         if (Input.GetButtonDown("BroSwitch") && Bro < 3)
         {
             Bro++;
-            dataMgr.dbHealth = Health.PlayerHealth;
-            dataMgr.dbLives = Health.PlayerLives;
-            dataMgr.dbCoins = Coin.PlayerCoins;
-            dataMgr.dbBro = Bro;
-            if(Bro > 3)
-            {
-                Bro = 3;
-            }
-            string jsonStringPos = JsonUtility.ToJson(dataMgr);
-            File.WriteAllText(Application.dataPath + "PlayerSaveData.json", jsonStringPos);
-        }
-        if (Input.GetButtonDown("BroSwitchNeg"))
+            string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
+            playerSave savedData = JsonUtility.FromJson<playerSave>(file);
+            savedData.savedBro = Bro;
+            string toJson = JsonUtility.ToJson(savedData);
+            JsonUtility.FromJsonOverwrite(toJson, savedData);
+            string toFile = JsonUtility.ToJson(savedData);
+            File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
+        }else if(Input.GetButtonDown("BroSwitch") && Bro >= 3)
         {
-            Bro--;
-            dataMgr.dbHealth = Health.PlayerHealth;
-            dataMgr.dbLives = Health.PlayerLives;
-            dataMgr.dbCoins = Coin.PlayerCoins;
-            dataMgr.dbBro = Bro;
-            if (Bro < 1)
-            {
-                Bro = 1;
-            }
-            string jsonstringNeg = JsonUtility.ToJson(dataMgr);
-            File.WriteAllText(Application.dataPath + "PlayerSaveData.json",jsonstringNeg);
-
+            Bro = 1;
+            string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
+            playerSave savedData = JsonUtility.FromJson<playerSave>(file);
+            savedData.savedBro = Bro;
+            string toJson = JsonUtility.ToJson(savedData);
+            JsonUtility.FromJsonOverwrite(toJson, savedData);
+            string toFile = JsonUtility.ToJson(savedData);
+            File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
         }
+        
+        if(Bro == 1)
+        {
+            Bros[0].SetActive(true);
+            Bros[1].SetActive(false);
+            Bros[2].SetActive(false);
+        }else if(Bro == 2)
+        {
+            Bros[0].SetActive(false);
+            Bros[1].SetActive(true);
+            Bros[2].SetActive(false);
+        }else if(Bro == 3)
+        {
+            Bros[0].SetActive(false);
+            Bros[1].SetActive(false);
+            Bros[2].SetActive(true);
+        }
+
     }
 }

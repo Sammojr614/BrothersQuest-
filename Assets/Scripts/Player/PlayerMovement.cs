@@ -4,47 +4,20 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public static float moveSpeed;
-    public static float jumpHeight;
-    public static bool isGrounded;
-    public int playerJumps;
-    private void Update()
+    int moveSpeed = 5;
+
+    // Update is called once per frame
+    void Update()
     {
-        Jump();
-        crouch();
+        jump();
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * moveSpeed;
-        if(GroundCheck.isGrounded == true)
-        {
-            playerJumps = 0;
-        }
     }
-
-    void Jump()
+    void jump()
     {
-        
-        if (Input.GetButtonDown("PlayerJump") && GroundCheck.isGrounded == true)
+        if (Input.GetButtonDown("Jump") && GroundCheck.isGrounded == true)
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(0f, jumpHeight, 0f),ForceMode2D.Impulse);
-            playerJumps++;
-        }
-        if (Input.GetButtonDown("PlayerJump") && BroSwitch.Bro == 2)
-        {
-            if(playerJumps < 2 && GroundCheck.isGrounded == false)
-            {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(0f, jumpHeight, 0f), ForceMode2D.Impulse);
-                playerJumps++;
-            }if(playerJumps < 2)
-            {
-                playerJumps = 2;
-            }
-        }
-    }
-    void crouch()
-    {
-        if (Input.GetButtonDown("Crouch") && GroundCheck.isGrounded == true)
-        {
-            moveSpeed = moveSpeed - 2;
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(0f, 5f, 0f), ForceMode2D.Impulse);
         }
     }
 }
