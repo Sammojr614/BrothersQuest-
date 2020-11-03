@@ -16,20 +16,22 @@ public class PlayerAnimate : MonoBehaviour
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
-        if (Input.GetButtonDown("Horizontal") && GroundCheck.isGrounded == true)
+       if(GroundCheck.isGrounded == true)
         {
-            playerAnimator.SetFloat("movement", 1);
-        }else if (Input.GetButtonUp("Horizontal") && GroundCheck.isGrounded == true)
-        {
-            playerAnimator.SetFloat("movement", 0);
+            playerAnimator.SetFloat("movement", 0f);
+            if (Input.GetButton("Horizontal"))
+            {
+                playerAnimator.SetFloat("movement", 1f);
+            }
+            if (Input.GetButton("Jump"))
+            {
+                playerAnimator.SetFloat("movement", 2f);
+            }
+
         }
-        if(Input.GetButton("Jump") && GroundCheck.isGrounded != true)
+        else if(GroundCheck.isGrounded == false)
         {
-            playerAnimator.SetFloat("movement", 2);
-        }
-        if (Input.GetButtonUp("Jump") && GroundCheck.isGrounded == false)
-        {
-            playerAnimator.SetFloat("movement", 2);
+            playerAnimator.SetFloat("movement", 2f);
         }
         
     }

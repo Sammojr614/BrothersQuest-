@@ -15,58 +15,92 @@ public class toyThrow : MonoBehaviour
     {
         string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
         plrDb = JsonUtility.FromJson<playerSave>(file);
-        ObjThrown.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
-        ObjThrown.SetActive(true);
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Ground"))
+        ObjThrown.SetActive(false);
+        if(BroSwitch.Bro <= 2)
         {
-            if(BroSwitch.Bro == 2)
-            {
-                ObjThrown.gameObject.transform.position = ElTrans.position;
-                ObjThrown.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
-            }
-            else if(BroSwitch.Bro == 3)
-            {
-                ObjThrown.gameObject.transform.position = LouTrans.position;
-                ObjThrown.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
-            }
+            ObjThrown.transform.position = ElTrans.position;
+        }else if(BroSwitch.Bro == 3)
+        {
+            ObjThrown.transform.position = LouTrans.position;
         }
     }
-    
+   
     void Update()
     {
         //When the Bro is 2 or 3 it makes the Stud Shoot
-        if(BroSwitch.Bro == 2 && Input.GetMouseButtonDown(0) || BroSwitch.Bro == 3 && Input.GetMouseButtonDown(0))
+        if(BroSwitch.Bro == 2 || BroSwitch.Bro == 3)
         {
-            
-            if(ToyCollect.toyAmount > 0)
+            if (Input.GetMouseButton(0))
             {
-                //Subtracting from the Total amount of toys collected 
-                ToyCollect.toyAmount--;
-                ObjThrown.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
-                ObjThrown.GetComponent<Rigidbody2D>().AddForce(Vector3.right * 500 + Vector3.up*200);
-                //Updating the Database
-                plrDb.collectedCharge = ToyCollect.toyAmount;
-                string toJson = JsonUtility.ToJson(plrDb);
-                JsonUtility.FromJsonOverwrite(toJson, plrDb);
-                string toFile = JsonUtility.ToJson(plrDb);
-                File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
-            }else if(BroSwitch.Bro == 2 && !Input.GetMouseButton(0) || BroSwitch.Bro == 3 && !Input.GetMouseButton(0))
-            {
-                if(BroSwitch.Bro == 2)
+                if(BroSwitch.Bro <= 2)
                 {
                     ObjThrown.transform.position = ElTrans.position;
-                }else if(BroSwitch.Bro == 3)
+                    if (ToyCollect.toyAmount > 0)
+                    {
+                        //Subtracting from the Total amount of toys collected 
+                        ToyCollect.toyAmount--;
+                        ObjThrown.SetActive(true);
+                        ObjThrown.GetComponent<Rigidbody2D>().AddForce(Vector3.right * 200 + Vector3.up * 200);
+                        //Updating the Database
+                        plrDb.collectedCharge = ToyCollect.toyAmount;
+                        string toJson = JsonUtility.ToJson(plrDb);
+                        JsonUtility.FromJsonOverwrite(toJson, plrDb);
+                        string toFile = JsonUtility.ToJson(plrDb);
+                        File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
+                        if (ObjThrown.transform.position.y <= -4.04)
+                        {
+                            ObjThrown.transform.position = ElTrans.position;
+                            ObjThrown.SetActive(false);
+                        }
+                    }
+                    if (ObjThrown.transform.position.y <= -4.04)
+                    {
+                        ObjThrown.transform.position = ElTrans.position;
+                        ObjThrown.SetActive(false);
+                    }
+
+                }
+                else if(BroSwitch.Bro == 3)
+                {
+                    ObjThrown.transform.position = LouTrans.position;
+                    if (ToyCollect.toyAmount > 0)
+                    {
+                        //Subtracting from the Total amount of toys collected 
+                        ToyCollect.toyAmount--;
+                        ObjThrown.SetActive(true);
+                        ObjThrown.GetComponent<Rigidbody2D>().AddForce(Vector3.right * 200 + Vector3.up * 200);
+                        //Updating the Database
+                        plrDb.collectedCharge = ToyCollect.toyAmount;
+                        string toJson = JsonUtility.ToJson(plrDb);
+                        JsonUtility.FromJsonOverwrite(toJson, plrDb);
+                        string toFile = JsonUtility.ToJson(plrDb);
+                        File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
+                        if (ObjThrown.transform.position.y <= -4.04)
+                        {
+                            ObjThrown.transform.position = LouTrans.position;
+                            ObjThrown.SetActive(false);
+                        }
+                    }
+                    if (ObjThrown.transform.position.y <= -4.04)
+                    {
+                        ObjThrown.transform.position = LouTrans.position;
+                        ObjThrown.SetActive(false);
+                    }
+                }
+            }
+            else if(Input.GetButtonDown("Horizontal"))
+            {
+                if (BroSwitch.Bro <= 2)
+                {
+                    ObjThrown.transform.position = ElTrans.position;
+                }
+                else if (BroSwitch.Bro == 3)
                 {
                     ObjThrown.transform.position = LouTrans.position;
                 }
             }
-            {
-
-            }
         }
+       
     }
-    
+
 }
