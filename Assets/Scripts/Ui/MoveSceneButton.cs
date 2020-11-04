@@ -17,5 +17,10 @@ public class MoveSceneButton : MonoBehaviour
     void sceneClick()
     {
         SceneManager.LoadScene(sceneName);
+        if(PauseMenu.isPaused == true)
+        {
+            Time.timeScale = 1;
+            Cursor.visible = true;
+        }
     }
 }

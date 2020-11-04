@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public static bool isPaused;
+    public Button resumeButton;
 
     private void Start()
     {
         pauseMenu.SetActive(false);
         isPaused = false;
+        resumeButton.onClick.AddListener(resumeGame);
     }
     private void Update()
     {

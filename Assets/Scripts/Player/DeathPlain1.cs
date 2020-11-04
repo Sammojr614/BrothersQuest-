@@ -21,6 +21,7 @@ public class DeathPlain1 : MonoBehaviour
             if(BroSwitch.Bro == 1)
             {
                 plrSave.savedHealth--;
+                plrSave.savedCoins = plrSave.savedCoins - 5;
                 Bros[0].position = playerSpawn.position;
                 string toJson = JsonUtility.ToJson(plrSave);
                 JsonUtility.FromJsonOverwrite(toJson, plrSave);
@@ -29,6 +30,7 @@ public class DeathPlain1 : MonoBehaviour
             }else if(BroSwitch.Bro == 2)
             {
                 plrSave.savedHealth--;
+                plrSave.savedCoins = plrSave.savedCoins - 5;
                 Bros[1].position = playerSpawn.position;
                 string toJson = JsonUtility.ToJson(plrSave);
                 JsonUtility.FromJsonOverwrite(toJson, plrSave);
@@ -37,6 +39,7 @@ public class DeathPlain1 : MonoBehaviour
             }else if(BroSwitch.Bro == 3)
             {
                 plrSave.savedHealth--;
+                plrSave.savedCoins = plrSave.savedCoins - 5;
                 Bros[2].position = playerSpawn.position;
                 string toJson = JsonUtility.ToJson(plrSave);
                 JsonUtility.FromJsonOverwrite(toJson, plrSave);
