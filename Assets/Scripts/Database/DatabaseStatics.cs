@@ -13,3 +13,10 @@ public class playerSave
     public int savedBro;
     public int collectedCharge;
 }
+[SerializeField]
+public class LevelIdex
+{
+    public bool Lvl1Complete;
+    public bool Lvl2Complete;
+    public bool Lvl3Complete;
+}

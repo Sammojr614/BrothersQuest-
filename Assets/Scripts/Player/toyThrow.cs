@@ -30,7 +30,7 @@ public class toyThrow : MonoBehaviour
         //When the Bro is 2 or 3 it makes the Stud Shoot
         if(BroSwitch.Bro == 2 || BroSwitch.Bro == 3)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 if(BroSwitch.Bro <= 2)
                 {
@@ -53,11 +53,11 @@ public class toyThrow : MonoBehaviour
                             ObjThrown.SetActive(false);
                         }
                     }
-                    if (ObjThrown.transform.position.y <= -4.04)
+                    else if(ToyCollect.toyAmount == 0)
                     {
-                        ObjThrown.transform.position = ElTrans.position;
                         ObjThrown.SetActive(false);
                     }
+                 
 
                 }
                 else if(BroSwitch.Bro == 3)
@@ -66,7 +66,7 @@ public class toyThrow : MonoBehaviour
                     if (ToyCollect.toyAmount > 0)
                     {
                         //Subtracting from the Total amount of toys collected 
-                        ToyCollect.toyAmount--;
+                        ToyCollect.toyAmount = ToyCollect.toyAmount -1;
                         ObjThrown.SetActive(true);
                         ObjThrown.GetComponent<Rigidbody2D>().AddForce(Vector3.right * 200 + Vector3.up * 200);
                         //Updating the Database
@@ -80,23 +80,24 @@ public class toyThrow : MonoBehaviour
                             ObjThrown.transform.position = LouTrans.position;
                             ObjThrown.SetActive(false);
                         }
-                    }
-                    if (ObjThrown.transform.position.y <= -4.04)
+                    }else if(ToyCollect.toyAmount == 0)
                     {
-                        ObjThrown.transform.position = LouTrans.position;
                         ObjThrown.SetActive(false);
                     }
+                   
                 }
             }
-            else if(Input.GetButtonDown("Horizontal"))
+            else if(Input.GetButton("Horizontal"))
             {
                 if (BroSwitch.Bro <= 2)
                 {
                     ObjThrown.transform.position = ElTrans.position;
+                    ObjThrown.SetActive(false);
                 }
                 else if (BroSwitch.Bro == 3)
                 {
                     ObjThrown.transform.position = LouTrans.position;
+                    ObjThrown.SetActive(false);
                 }
             }
         }

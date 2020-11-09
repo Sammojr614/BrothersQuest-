@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.Audio;
 
 public class CoinCollect : MonoBehaviour
 {
     public static int playerCoins;
+    public AudioSource playAudio;
+    public AudioClip collectSound;
     private void Start()
     {
         string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
@@ -16,6 +19,8 @@ public class CoinCollect : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            playAudio.clip = collectSound;
+            playAudio.Play();
             string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
             playerSave savedData = JsonUtility.FromJson<playerSave>(file);
             playerCoins++;

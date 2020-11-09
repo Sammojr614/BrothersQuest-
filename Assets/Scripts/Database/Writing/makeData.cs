@@ -13,7 +13,7 @@ public class makeData : MonoBehaviour
             plrSave.savedCoins = 0;
             plrSave.savedHealth = 6;
             plrSave.savedLives = 4;
-            plrSave.savedLocation = "Testing";
+            plrSave.savedLocation = "Hub";
             plrSave.savedBro = 1;
             string jsonString = JsonUtility.ToJson(plrSave);
             File.WriteAllText(Application.dataPath + "playerSaveData.json", jsonString);
