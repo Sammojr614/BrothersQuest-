@@ -28,6 +28,10 @@ public class CoinCollect : MonoBehaviour
                 playerCoins = 0;
             }
             playerCoins++;
+            if(savedData.savedCoins == 0)
+            {
+                savedData.savedCoins = 0;
+            }
             savedData.savedCoins = playerCoins;
             string toJson = JsonUtility.ToJson(savedData);
             JsonUtility.FromJsonOverwrite(toJson, savedData);

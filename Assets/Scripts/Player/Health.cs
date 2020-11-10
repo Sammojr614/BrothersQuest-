@@ -14,48 +14,66 @@ public class Health : MonoBehaviour
     void Update()
     {
         string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
-        playerSave savedData = JsonUtility.FromJson<playerSave>(file);
-        if(savedData.savedHealth == 6)
+        playerSave plrSave = JsonUtility.FromJson<playerSave>(file);
+
+        if (plrSave.savedHealth == 6)
         {
             Hearts[0].sprite = FullHeart;
             Hearts[1].sprite = FullHeart;
             Hearts[2].sprite = FullHeart;
         }
-        if(savedData.savedHealth == 5)
+        if(plrSave.savedHealth == 5)
         {
             Hearts[0].sprite = HalfHeart;
             Hearts[1].sprite = FullHeart;
             Hearts[2].sprite = FullHeart;
         }
-        if(savedData.savedHealth == 4)
+        if(plrSave.savedHealth == 4)
         {
             Hearts[0].sprite = EmptyHeart;
             Hearts[1].sprite = FullHeart;
             Hearts[2].sprite = FullHeart;
         }
-        if(savedData.savedHealth == 3)
+        if(plrSave.savedHealth == 3)
         {
             Hearts[0].sprite = EmptyHeart;
             Hearts[1].sprite = HalfHeart;
             Hearts[2].sprite = FullHeart;
         }
-        if(savedData.savedHealth == 2)
+        if(plrSave.savedHealth == 2)
         {
             Hearts[0].sprite = EmptyHeart;
             Hearts[1].sprite = EmptyHeart;
             Hearts[2].sprite = FullHeart;
         }
-        if(savedData.savedHealth == 1)
+        if(plrSave.savedHealth == 1)
         {
             Hearts[0].sprite = EmptyHeart;
             Hearts[1].sprite = EmptyHeart;
             Hearts[2].sprite = HalfHeart;
         }
-        if(savedData.savedHealth == 0)
+        if(plrSave.savedHealth == 0)
         {
             Hearts[0].sprite = EmptyHeart;
             Hearts[1].sprite = EmptyHeart;
             Hearts[2].sprite = EmptyHeart;
+            plrSave.savedLives--;
+            plrSave.savedHealth = 6;
+            string toJson = JsonUtility.ToJson(plrSave);
+            JsonUtility.FromJsonOverwrite(toJson, plrSave);
+            string toFile = JsonUtility.ToJson(plrSave);
+            File.WriteAllText(Application.dataPath + "playerSaveData.json",toFile);
+
         }
+        if(plrSave.savedHealth < 0)
+        {
+            plrSave.savedHealth = 0;
+            string toJson = JsonUtility.ToJson(plrSave);
+            JsonUtility.FromJsonOverwrite(toJson, plrSave);
+            string toFile = JsonUtility.ToJson(plrSave);
+            File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
+        }
+
+        
     }
 }
