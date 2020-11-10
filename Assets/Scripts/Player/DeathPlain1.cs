@@ -21,6 +21,7 @@ public class DeathPlain1 : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            //Green Bro
             if(BroSwitch.Bro == 1)
             {
                 playClip.clip = Hit;
@@ -36,6 +37,8 @@ public class DeathPlain1 : MonoBehaviour
                 
             }else if(BroSwitch.Bro == 2)
             {
+                playClip.clip = Hit;
+                playClip.Play();
                 plrSave.savedHealth--;
                 plrSave.savedCoins = plrSave.savedCoins - 5;
                 Bros[1].position = playerSpawn.position;
@@ -45,6 +48,8 @@ public class DeathPlain1 : MonoBehaviour
                 File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
             }else if(BroSwitch.Bro == 3)
             {
+                playClip.clip = Hit;
+                playClip.Play();
                 plrSave.savedHealth--;
                 plrSave.savedCoins = plrSave.savedCoins - 5;
                 Bros[2].position = playerSpawn.position;
