@@ -12,6 +12,7 @@ public class GameOverButtons : MonoBehaviour
     playerSave plrSave = new playerSave();
     private void Start()
     {
+        Cursor.visible = true;
         string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
         plrSave = JsonUtility.FromJson<playerSave>(file);
         continueButton.onClick.AddListener(continueClick);

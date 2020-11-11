@@ -13,7 +13,7 @@ public class CloudMove : MonoBehaviour
     {
         if(gameObject.transform.position.x <= -7.79)
         {
-            gameObject.transform.position = new Vector3(26, gameObject.transform.position.y, 0);
+            gameObject.transform.position = new Vector3(60.16f, gameObject.transform.position.y, 0);
         }
         else
         {
