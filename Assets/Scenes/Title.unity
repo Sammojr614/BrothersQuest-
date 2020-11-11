@@ -156,7 +156,7 @@ RectTransform:
   m_Children:
   - {fileID: 1523331452}
   m_Father: {fileID: 1635544252}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.94346726, y: 0.883}
   m_AnchorMax: {x: 0.99068856, y: 0.9766829}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 228793649}
   - component: {fileID: 228793648}
   m_Layer: 5
-  m_Name: Changelist (5)
+  m_Name: Changelist (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -276,11 +276,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1635544252}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.00652715, y: 0.47463423}
   m_AnchorMax: {x: 0.5184326, y: 0.523}
-  m_AnchoredPosition: {x: -0.5999756, y: 0.5}
+  m_AnchoredPosition: {x: -0.6001587, y: 0.5000038}
   m_SizeDelta: {x: 0.004058838, y: 4.7543335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &228793648
@@ -342,7 +342,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Entrance to Level 3 added'
+  m_Text: '- Level 3 Has Music'
 --- !u!222 &228793650
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 496262822}
   - component: {fileID: 496262821}
   m_Layer: 5
-  m_Name: Changelist (1)
+  m_Name: Changelist (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,11 +722,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1635544252}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.00652715, y: 0.5486343}
   m_AnchorMax: {x: 0.4188512, y: 0.61131716}
-  m_AnchoredPosition: {x: -0.2999878, y: 0.5}
+  m_AnchoredPosition: {x: 5, y: 0.5}
   m_SizeDelta: {x: 0.42626953, y: 0.7543335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &496262821
@@ -788,7 +788,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Fixed the Negitve Coin issue'
+  m_Text: '- Made all Levels Longer'
 --- !u!222 &496262823
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1145,7 +1145,7 @@ GameObject:
   - component: {fileID: 693833939}
   - component: {fileID: 693833938}
   m_Layer: 5
-  m_Name: Changelist (4)
+  m_Name: Changelist (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1163,11 +1163,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1635544252}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.00652715, y: 0.651}
   m_AnchorMax: {x: 0.5184326, y: 0.711}
-  m_AnchoredPosition: {x: 0.6001587, y: -1}
+  m_AnchoredPosition: {x: 0.60009766, y: -1}
   m_SizeDelta: {x: -0.99594116, y: -0.2456665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &693833938
@@ -1229,7 +1229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- losing all Health now Removes Lives'
+  m_Text: '- Level 3 Is playable'
 --- !u!222 &693833940
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5402412272178277761, guid: 23b1e9dd8078d4182be8735329d12066,
+  m_Sprite: {fileID: 8894201953851282084, guid: 23b1e9dd8078d4182be8735329d12066,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1356,7 +1356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -122.399994, y: 70.600006}
+  m_AnchoredPosition: {x: -122.3999, y: 70.6001}
   m_SizeDelta: {x: 42.635315, y: 39.33963}
   m_Pivot: {x: 0.5, y: 0.50000006}
 --- !u!1 &919349979
@@ -1530,7 +1530,7 @@ GameObject:
   - component: {fileID: 1103149484}
   - component: {fileID: 1103149483}
   m_Layer: 5
-  m_Name: Changelist (2)
+  m_Name: Changelist (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1548,7 +1548,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1635544252}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.013, y: 0.38036582}
   m_AnchorMax: {x: 0.5271892, y: 0.44400004}
@@ -1614,7 +1614,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Messed around with Quantium Physics '
+  m_Text: '- Took a Nap'
 --- !u!222 &1103149485
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1837,7 +1837,7 @@ GameObject:
   - component: {fileID: 1368852153}
   - component: {fileID: 1368852152}
   m_Layer: 5
-  m_Name: Changelist (3)
+  m_Name: Changelist (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1855,12 +1855,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1635544252}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.013, y: 0.29731712}
-  m_AnchorMax: {x: 0.5271892, y: 0.35268292}
-  m_AnchoredPosition: {x: -0.5, y: 0}
-  m_SizeDelta: {x: -2.9959412, y: 1.7543335}
+  m_AnchorMin: {x: 0.013, y: 0.1903658}
+  m_AnchorMax: {x: 0.5271892, y: 0.25273162}
+  m_AnchoredPosition: {x: -0.5, y: 0.5}
+  m_SizeDelta: {x: -2.9959412, y: -1.2456665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1368852152
 BoxCollider2D:
@@ -2178,7 +2178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000038146973, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1523331453
@@ -2254,11 +2254,12 @@ RectTransform:
   m_Children:
   - {fileID: 543783638}
   - {fileID: 2123991790}
+  - {fileID: 693833937}
   - {fileID: 496262820}
+  - {fileID: 228793647}
   - {fileID: 1103149482}
   - {fileID: 1368852151}
-  - {fileID: 693833937}
-  - {fileID: 228793647}
+  - {fileID: 1792779962}
   - {fileID: 22724502}
   m_Father: {fileID: 1347689055}
   m_RootOrder: 3
@@ -2306,6 +2307,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635544251}
   m_CullTransparentMesh: 0
+--- !u!1 &1792779961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792779962}
+  - component: {fileID: 1792779965}
+  - component: {fileID: 1792779964}
+  - component: {fileID: 1792779963}
+  m_Layer: 5
+  m_Name: Changelist (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1792779962
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792779961}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1635544252}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.013, y: 0.28517103}
+  m_AnchorMax: {x: 0.5271892, y: 0.34331712}
+  m_AnchoredPosition: {x: -3, y: -1}
+  m_SizeDelta: {x: -1.9959412, y: 0.7543335}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &1792779963
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792779961}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1792779964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792779961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: '- Messed around in Space Time'
+--- !u!222 &1792779965
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792779961}
+  m_CullTransparentMesh: 0
 --- !u!1 &2123991789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,7 +2448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.018567419, y: 0.748}
   m_AnchorMax: {x: 0.56152713, y: 0.8086342}
-  m_AnchoredPosition: {x: -3.3000488, y: 0.19998169}
+  m_AnchoredPosition: {x: -3.2998047, y: 0.19995117}
   m_SizeDelta: {x: 1.8613586, y: -1.3754578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &2123991791
@@ -2403,7 +2510,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- This Changelog now doesn''t close the game'
+  m_Text: '- Changelog Doesn''t close game'
 --- !u!222 &2123991793
 CanvasRenderer:
   m_ObjectHideFlags: 0

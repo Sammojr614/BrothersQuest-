@@ -36,16 +36,17 @@ public class LevelComplete : MonoBehaviour
                 string toFile = JsonUtility.ToJson(lvlIndex);
                 File.WriteAllText(Application.dataPath + "levelIndex.json", toFile);
                 SceneManager.LoadScene("Hub");
-            }else if(SceneManager.GetActiveScene().name == "Lvl3")
+            }
+        }else if(SceneManager.GetActiveScene().name == "Lvl3")
+        {
+            if (collision.CompareTag("Player"))
             {
-                if (collision.CompareTag("Player"))
-                {
-                    lvlIndex.Lvl3Complete = true;
-                    string toJson = JsonUtility.ToJson(lvlIndex);
-                    JsonUtility.FromJsonOverwrite(toJson, lvlIndex);
-                    string toFile = JsonUtility.ToJson(lvlIndex);
-                    File.WriteAllText(Application.dataPath + "levelIndex.json", toFile);
-                }
+                lvlIndex.Lvl2Complete = true;
+                string toJson = JsonUtility.ToJson(lvlIndex);
+                JsonUtility.FromJsonOverwrite(toJson, lvlIndex);
+                string toFile = JsonUtility.ToJson(lvlIndex);
+                File.WriteAllText(Application.dataPath + "levelIndex.json", toFile);
+                SceneManager.LoadScene("Hub");
             }
         }
     }
