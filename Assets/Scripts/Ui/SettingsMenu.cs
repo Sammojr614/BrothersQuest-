@@ -84,4 +84,10 @@ public class SettingsMenu : MonoBehaviour
             QualitySettings.SetQualityLevel(1);
         }
     }
+
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
 }
