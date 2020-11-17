@@ -342,7 +342,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Level 3 Has Music'
+  m_Text: '- now has a windowed mode'
 --- !u!222 &228793650
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Made all Levels Longer'
+  m_Text: -Changed the Music in Lvl3
 --- !u!222 &496262823
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1229,7 +1229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Level 3 Is playable'
+  m_Text: '- Adjustable Resoutions '
 --- !u!222 &693833940
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1564,7 +1564,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ver. Alpha 1.3
+  m_Text: Ver. Alpha 1.5
 --- !u!222 &919349982
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1749,7 +1749,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Took a Nap'
+  m_Text: '- Made Tacos '
 --- !u!222 &1103149485
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2057,7 +2057,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- added .1 to the Version Number'
+  m_Text: added .1 to the Version Number
 --- !u!222 &1368852154
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2619,7 +2619,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Messed around in Space Time'
+  m_Text: '- Saved the Multiverse'
 --- !u!222 &1792779965
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2725,7 +2725,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Changelog Doesn''t close game'
+  m_Text: -Added Settings Menu
 --- !u!222 &2123991793
 CanvasRenderer:
   m_ObjectHideFlags: 0
