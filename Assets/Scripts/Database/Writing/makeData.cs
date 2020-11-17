@@ -8,6 +8,10 @@ public class makeData : MonoBehaviour
     playerSave plrSave = new playerSave();
     private void Start()
     {
+        if(Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }
         if(!File.Exists(Application.dataPath + "playerSaveData.json"))
         {
             plrSave.savedCoins = 0;
