@@ -24,9 +24,9 @@ public class toyThrow : MonoBehaviour
             ObjThrown.transform.position = LouTrans.position;
         }
     }
-   
     void Update()
     {
+        
         //When the Bro is 2 or 3 it makes the Stud Shoot
         if(BroSwitch.Bro == 2 || BroSwitch.Bro == 3)
         {
