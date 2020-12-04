@@ -16,6 +16,51 @@ public class Health : MonoBehaviour
         string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
         playerSave plrSave = JsonUtility.FromJson<playerSave>(file);
 
+        switch (plrSave.savedHealth)
+        {
+            case 6:
+                Hearts[0].sprite = FullHeart;
+                Hearts[1].sprite = FullHeart;
+                Hearts[2].sprite = FullHeart;
+                break;
+            case 5:
+                Hearts[0].sprite = HalfHeart;
+                Hearts[1].sprite = FullHeart;
+                Hearts[2].sprite = FullHeart;
+                break;
+            case 4:
+                Hearts[0].sprite = EmptyHeart;
+                Hearts[1].sprite = FullHeart;
+                Hearts[2].sprite = FullHeart;
+                break;
+            case 3:
+                Hearts[0].sprite = EmptyHeart;
+                Hearts[1].sprite = HalfHeart;
+                Hearts[2].sprite = FullHeart;
+                break;
+            case 2:
+                Hearts[0].sprite = EmptyHeart;
+                Hearts[1].sprite = EmptyHeart;
+                Hearts[2].sprite = FullHeart;
+                break;
+            case 1:
+                Hearts[0].sprite = EmptyHeart;
+                Hearts[1].sprite = EmptyHeart;
+                Hearts[2].sprite = HalfHeart;
+                break;
+            case 0:
+                Hearts[0].sprite = EmptyHeart;
+                Hearts[1].sprite = EmptyHeart;
+                Hearts[2].sprite = EmptyHeart;
+                plrSave.savedLives--;
+                plrSave.savedHealth = 6;
+                string toJson = JsonUtility.ToJson(plrSave);
+                JsonUtility.FromJsonOverwrite(toJson, plrSave);
+                string toFile = JsonUtility.ToJson(plrSave);
+                File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
+                break;
+        }
+        /*
         if (plrSave.savedHealth == 6)
         {
             Hearts[0].sprite = FullHeart;
@@ -65,6 +110,8 @@ public class Health : MonoBehaviour
             File.WriteAllText(Application.dataPath + "playerSaveData.json",toFile);
 
         }
+        */
+
         if(plrSave.savedHealth < 0)
         {
             plrSave.savedHealth = 0;

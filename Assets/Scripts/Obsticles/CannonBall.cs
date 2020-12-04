@@ -25,7 +25,7 @@ public class CannonBall : MonoBehaviour
             gameObject.transform.Translate(-0.05f, 0, 0);
         }
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Player"))
         {
