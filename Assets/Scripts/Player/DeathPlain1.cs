@@ -27,10 +27,7 @@ public class DeathPlain1 : MonoBehaviour
                 playClip.clip = Hit;
                 playClip.Play();
                 plrSave.savedHealth--;
-                if(plrSave.savedCoins >= 5)
-                {
-                    plrSave.savedCoins = plrSave.savedCoins - 5;
-                }
+                
                 
                 Bros[0].position = playerSpawn.position;
                 string toJson = JsonUtility.ToJson(plrSave);
@@ -44,10 +41,7 @@ public class DeathPlain1 : MonoBehaviour
                 playClip.clip = Hit;
                 playClip.Play();
                 plrSave.savedHealth--;
-                if (plrSave.savedCoins >= 5)
-                {
-                    plrSave.savedCoins = plrSave.savedCoins - 5;
-                }
+               
                 Bros[1].position = playerSpawn.position;
                 string toJson = JsonUtility.ToJson(plrSave);
                 JsonUtility.FromJsonOverwrite(toJson, plrSave);
@@ -58,10 +52,7 @@ public class DeathPlain1 : MonoBehaviour
                 playClip.clip = Hit;
                 playClip.Play();
                 plrSave.savedHealth--;
-                if (plrSave.savedCoins >= 5)
-                {
-                    plrSave.savedCoins = plrSave.savedCoins - 5;
-                }
+              
                 Bros[2].position = playerSpawn.position;
                 string toJson = JsonUtility.ToJson(plrSave);
                 JsonUtility.FromJsonOverwrite(toJson, plrSave);

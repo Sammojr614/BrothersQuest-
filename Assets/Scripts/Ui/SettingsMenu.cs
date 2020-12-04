@@ -12,7 +12,7 @@ public class SettingsMenu : MonoBehaviour
     public Button QualityButton;
     public Dropdown resolutionDropDown;
     Resolution[] resolutions;
-    //public Button Apply;
+  
     private void Start()
     {
         resolutions = Screen.resolutions;
