@@ -56,8 +56,7 @@ public class Health : MonoBehaviour
                 plrSave.savedHealth = 6;
                 string toJson = JsonUtility.ToJson(plrSave);
                 JsonUtility.FromJsonOverwrite(toJson, plrSave);
-                string toFile = JsonUtility.ToJson(plrSave);
-                File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
+                File.WriteAllText(Application.dataPath + "playerSaveData.json", toJson);
                 break;
         }
         /*

@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -18.5, y: -24}
+  m_AnchoredPosition: {x: -45, y: -44}
   m_SizeDelta: {x: 56, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &137993651
@@ -394,7 +394,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Fixed Switching Brothers '
+  m_Text: '- Cannon Damage FIxed '
 --- !u!222 &288934949
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -654,8 +654,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 211.5, y: -76}
-  m_SizeDelta: {x: 320.9921, y: 37.917572}
+  m_AnchoredPosition: {x: 236.3, y: -76}
+  m_SizeDelta: {x: 370.56326, y: 37.917572}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &344791613
 MonoBehaviour:
@@ -690,7 +690,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- added .1 to the Version Num'
+  m_Text: '- added .1 to the Version Number'
 --- !u!222 &344791614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -939,8 +939,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 211.5, y: -23}
-  m_SizeDelta: {x: 320.9921, y: 37.917572}
+  m_AnchoredPosition: {x: 370.2, y: -20.8}
+  m_SizeDelta: {x: 638.4761, y: 33.65604}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &447134233
 MonoBehaviour:
@@ -975,7 +975,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Made Dinner '
+  m_Text: '- Everyone needs to make it to the end to finish the level'
 --- !u!222 &447134234
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1957,7 +1957,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Gray bro can pickup Blue'
+  m_Text: '- Lives/Health Fixes'
 --- !u!222 &1344969825
 CanvasRenderer:
   m_ObjectHideFlags: 0

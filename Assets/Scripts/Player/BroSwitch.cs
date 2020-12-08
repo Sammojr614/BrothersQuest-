@@ -63,16 +63,13 @@ public class BroSwitch : MonoBehaviour
             //J
             Bros[0].GetComponent<PlayerMovement>().enabled = true;
             Bros[0].GetComponent<BoxCollider2D>().isTrigger = false;
-            Bros[0].GetComponent<Rigidbody2D>().IsAwake();
             //El
             Bros[1].GetComponent<PlayerMovement>().enabled = false;
             Bros[1].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[1].GetComponent<Rigidbody2D>().Sleep();
             Bros[1].GetComponent<Animator>().SetFloat("movement", 0f);
             //Lou
             Bros[2].GetComponent<PlayerMovement>().enabled = false;
             Bros[2].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[2].GetComponent<Rigidbody2D>().Sleep();
             Bros[2].GetComponent<Animator>().SetFloat("movement", 0f);
         }
         else if(Bro == 2)
@@ -80,16 +77,13 @@ public class BroSwitch : MonoBehaviour
             //J
             Bros[0].GetComponent<PlayerMovement>().enabled = false;
             Bros[0].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[0].GetComponent<Rigidbody2D>().Sleep();
             Bros[0].GetComponent<Animator>().SetFloat("movement", 0f);
             //El
             Bros[1].GetComponent<PlayerMovement>().enabled = true;
             Bros[1].GetComponent<BoxCollider2D>().isTrigger = false;
-            Bros[1].GetComponent<Rigidbody2D>().IsAwake();
             //Lou
             Bros[2].GetComponent<PlayerMovement>().enabled = false;
             Bros[2].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[2].GetComponent<Rigidbody2D>().Sleep();
             Bros[2].GetComponent<Animator>().SetFloat("movement", 0f);
         }
         else if(Bro == 3)
@@ -97,17 +91,14 @@ public class BroSwitch : MonoBehaviour
             //J
             Bros[0].GetComponent<PlayerMovement>().enabled = false;
             Bros[0].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[0].GetComponent<Rigidbody2D>().Sleep();
             Bros[0].GetComponent<Animator>().SetFloat("movement", 0f);
             //El
             Bros[1].GetComponent<PlayerMovement>().enabled = false;
             Bros[1].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[1].GetComponent<Rigidbody2D>().Sleep();
             Bros[1].GetComponent<Animator>().SetFloat("movement", 0f);
             //Lou
             Bros[2].GetComponent<PlayerMovement>().enabled = true;
             Bros[2].GetComponent<BoxCollider2D>().isTrigger = false;
-            Bros[2].GetComponent<Rigidbody2D>().IsAwake();
         }
 
     }
