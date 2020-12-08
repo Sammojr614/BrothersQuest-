@@ -13,7 +13,6 @@ public class LocationSave : MonoBehaviour
         savedData.savedLocation = SceneManager.GetActiveScene().name;
         string rewriteData = JsonUtility.ToJson(savedData);
         JsonUtility.FromJsonOverwrite(rewriteData, savedData);
-        string writetoFile = JsonUtility.ToJson(savedData);
-        File.WriteAllText(Application.dataPath + "playerSaveData.json", writetoFile);
+        File.WriteAllText(Application.dataPath + "playerSaveData.json", rewriteData);
     }
 }

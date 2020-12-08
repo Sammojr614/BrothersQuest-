@@ -29,6 +29,37 @@ public class LevelComplete : MonoBehaviour
                         lvlIndex.Lvl1Complete = true;
                         string tojson = JsonUtility.ToJson(lvlIndex);
                         JsonUtility.FromJsonOverwrite(tojson, lvlIndex);
+                        File.WriteAllText(Application.dataPath + "levelIndex.json",tojson);
+                    }
+                }
+            }
+        }else if(SceneManager.GetActiveScene().name == "Lvl2")
+        {
+            if (gameObject.GetComponent<BoxCollider2D>().IsTouching(J.GetComponent<BoxCollider2D>()))
+            {
+                if (gameObject.GetComponent<BoxCollider2D>().IsTouching(El.GetComponent<BoxCollider2D>()))
+                {
+                    if (gameObject.GetComponent<BoxCollider2D>().IsTouching(Lou.GetComponent<BoxCollider2D>()))
+                    {
+                        lvlIndex.Lvl2Complete = true;
+                        string tojson = JsonUtility.ToJson(lvlIndex);
+                        JsonUtility.FromJsonOverwrite(tojson, lvlIndex);
+                        File.WriteAllText(Application.dataPath + "levelIndex.json", tojson);
+                    }
+                }
+            }
+        }else if(SceneManager.GetActiveScene().name == "Lvl3")
+        {
+            if (gameObject.GetComponent<BoxCollider2D>().IsTouching(J.GetComponent<BoxCollider2D>()))
+            {
+                if (gameObject.GetComponent<BoxCollider2D>().IsTouching(El.GetComponent<BoxCollider2D>()))
+                {
+                    if (gameObject.GetComponent<BoxCollider2D>().IsTouching(Lou.GetComponent<BoxCollider2D>()))
+                    {
+                        lvlIndex.Lvl3Complete = true;
+                        string tojson = JsonUtility.ToJson(lvlIndex);
+                        JsonUtility.FromJsonOverwrite(tojson, lvlIndex);
+                        File.WriteAllText(Application.dataPath + "levelIndex.json", tojson);
                     }
                 }
             }
