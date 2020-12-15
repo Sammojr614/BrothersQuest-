@@ -1,105 +1,79 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
 
 public class BroSwitch : MonoBehaviour
 {
-    public static int Bro;
-    public List<GameObject> Bros = new List<GameObject>();
-    private void Start()
-    {
-        string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
-        playerSave savedData = JsonUtility.FromJson<playerSave>(file);
-        Bro = savedData.savedBro;
-    }
+    public static int currentBro = 1;
+    public List<GameObject> Bros;
     private void Update()
     {
-       
-        if (Input.GetKeyDown(KeyCode.E) && Bro < 3)
+        print(currentBro);
+        if(currentBro < 3 && Input.GetKeyDown(KeyCode.E))
         {
-            Bro++;
-            string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
-            playerSave savedData = JsonUtility.FromJson<playerSave>(file);
-            savedData.savedBro = Bro;
-            string toJson = JsonUtility.ToJson(savedData);
-            JsonUtility.FromJsonOverwrite(toJson, savedData);
-            string toFile = JsonUtility.ToJson(savedData);
-            File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
-        }else if(Input.GetKeyDown(KeyCode.E) && Bro >= 3)
+            currentBro++;
+        }else if(currentBro >=1 && Input.GetKeyDown(KeyCode.Q) && currentBro > 0)
         {
-            Bro = 1;
-            string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
-            playerSave savedData = JsonUtility.FromJson<playerSave>(file);
-            savedData.savedBro = Bro;
-            string toJson = JsonUtility.ToJson(savedData);
-            JsonUtility.FromJsonOverwrite(toJson, savedData);
-            string toFile = JsonUtility.ToJson(savedData);
-            File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
+            currentBro--;
         }
-        if(Input.GetKeyDown(KeyCode.Q) && Bro == 1)
+        if(currentBro == 0)
         {
-            Bro = 3;
-            string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
-            playerSave savedData = JsonUtility.FromJson<playerSave>(file);
-            savedData.savedBro = Bro;
-            string toJson = JsonUtility.ToJson(savedData);
-            JsonUtility.FromJsonOverwrite(toJson, savedData);
-            string toFile = JsonUtility.ToJson(savedData);
-            File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
-        }else if(Input.GetKeyDown(KeyCode.Q) && Bro <= 3)
-        {
-            Bro--;
-            string file = File.ReadAllText(Application.dataPath + "playerSaveData.json");
-            playerSave savedData = JsonUtility.FromJson<playerSave>(file);
-            savedData.savedBro = Bro;
-            string toJson = JsonUtility.ToJson(savedData);
-            JsonUtility.FromJsonOverwrite(toJson, savedData);
-            string toFile = JsonUtility.ToJson(savedData);
-            File.WriteAllText(Application.dataPath + "playerSaveData.json", toFile);
+            currentBro = 1;
         }
-        if(Bro == 1)
+        switch (currentBro)
         {
-            //J
-            Bros[0].GetComponent<PlayerMovement>().enabled = true;
-            Bros[0].GetComponent<BoxCollider2D>().isTrigger = false;
-            //El
-            Bros[1].GetComponent<PlayerMovement>().enabled = false;
-            Bros[1].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[1].GetComponent<Animator>().SetFloat("movement", 0f);
-            //Lou
-            Bros[2].GetComponent<PlayerMovement>().enabled = false;
-            Bros[2].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[2].GetComponent<Animator>().SetFloat("movement", 0f);
-        }
-        else if(Bro == 2)
-        {
-            //J
-            Bros[0].GetComponent<PlayerMovement>().enabled = false;
-            Bros[0].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[0].GetComponent<Animator>().SetFloat("movement", 0f);
-            //El
-            Bros[1].GetComponent<PlayerMovement>().enabled = true;
-            Bros[1].GetComponent<BoxCollider2D>().isTrigger = false;
-            //Lou
-            Bros[2].GetComponent<PlayerMovement>().enabled = false;
-            Bros[2].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[2].GetComponent<Animator>().SetFloat("movement", 0f);
-        }
-        else if(Bro == 3)
-        {
-            //J
-            Bros[0].GetComponent<PlayerMovement>().enabled = false;
-            Bros[0].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[0].GetComponent<Animator>().SetFloat("movement", 0f);
-            //El
-            Bros[1].GetComponent<PlayerMovement>().enabled = false;
-            Bros[1].GetComponent<BoxCollider2D>().isTrigger = true;
-            Bros[1].GetComponent<Animator>().SetFloat("movement", 0f);
-            //Lou
-            Bros[2].GetComponent<PlayerMovement>().enabled = true;
-            Bros[2].GetComponent<BoxCollider2D>().isTrigger = false;
-        }
+            case 1:
+                //Freezing Rotatin so they wont fall through the floor
+                Bros[0].gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                Bros[1].gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+                Bros[2].gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+                //Disabling Colliders
+                Bros[0].gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                Bros[1].gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                Bros[2].gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                //So they Can't move
+                Bros[0].gameObject.GetComponent<PlayerMovement>().enabled = true;
+                Bros[1].gameObject.GetComponent<PlayerMovement>().enabled = false;
+                Bros[2].gameObject.GetComponent<PlayerMovement>().enabled = false;
+                //locking animations
+                Bros[1].gameObject.GetComponent<Animator>().SetFloat("movement", 0);
+                Bros[2].gameObject.GetComponent<Animator>().SetFloat("movement", 0);
 
+                break;
+            case 2:
+                //freezing so they don't fall
+                Bros[0].gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+                Bros[1].gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                Bros[2].gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+                //so they can't move
+                Bros[0].gameObject.GetComponent<PlayerMovement>().enabled = false;
+                Bros[1].gameObject.GetComponent<PlayerMovement>().enabled = true;
+                Bros[2].gameObject.GetComponent<PlayerMovement>().enabled = false;
+                //Disabling Colliders
+                Bros[0].gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                Bros[1].gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                Bros[2].gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                //locking animations
+                Bros[0].gameObject.GetComponent<Animator>().SetFloat("movement", 0);
+                Bros[2].gameObject.GetComponent<Animator>().SetFloat("movement", 0);
+                break;
+            case 3:
+                //Freezing them so they don't fall
+                Bros[0].gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+                Bros[1].gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+                Bros[2].gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                //so they can't move
+                Bros[0].gameObject.GetComponent<PlayerMovement>().enabled = false;
+                Bros[1].gameObject.GetComponent<PlayerMovement>().enabled = false;
+                Bros[2].gameObject.GetComponent<PlayerMovement>().enabled = true;
+                //Disabling Colliders
+                Bros[0].gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                Bros[1].gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                Bros[2].gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                //locking animations
+                Bros[0].gameObject.GetComponent<Animator>().SetFloat("movement", 0);
+                Bros[1].gameObject.GetComponent<Animator>().SetFloat("movement", 0);
+                break;
+        }
     }
 }

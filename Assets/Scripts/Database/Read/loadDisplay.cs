@@ -1,26 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
 using UnityEngine.UI;
+using System.IO;
+using UnityEngine.SceneManagement;
 
-public class Health : MonoBehaviour
+public class loadDisplay : MonoBehaviour
 {
-    playerData plrData = new playerData();
+    playerData readData = new playerData();
+    public Text livesDisplay;
+    public Text Coins;
     public Sprite FullHeart;
     public Sprite HalfHeart;
     public Sprite EmptyHeart;
     public List<SpriteRenderer> Hearts = new List<SpriteRenderer>();
-    public Text lives;
-    private void Start()
+    public Button LoadButton;
+
+    void Start()
     {
         string file = File.ReadAllText(Application.dataPath + "PlayerSaveData.json");
-        plrData = JsonUtility.FromJson<playerData>(file);
+        readData = JsonUtility.FromJson<playerData>(file);
+        LoadButton.onClick.AddListener(gotoScene);
+        
     }
-    private void Update()
+    void gotoScene()
     {
-        lives.text ="x: " + plrData.lives.ToString();
-        switch (plrData.health)
+        SceneManager.LoadScene(readData.location);
+    }
+
+   
+    void Update()
+    {
+        livesDisplay.text ="Lives: " + readData.lives.ToString();
+        Coins.text = "x: " + readData.coins.ToString();
+        switch (readData.health)
         {
             case 6:
                 Hearts[0].sprite = FullHeart;
@@ -52,14 +65,12 @@ public class Health : MonoBehaviour
                 Hearts[1].sprite = EmptyHeart;
                 Hearts[2].sprite = HalfHeart;
                 break;
-        }
-        if(plrData.health == 0)
-        {
-            plrData.lives--;
-            plrData.health = 6;
-            string tojson = JsonUtility.ToJson(plrData);
-            JsonUtility.FromJsonOverwrite(tojson, plrData);
-            File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
+            case 0:
+                Hearts[0].sprite = EmptyHeart;
+                Hearts[1].sprite = EmptyHeart;
+                Hearts[2].sprite = EmptyHeart;
+                break;
+
         }
     }
 }

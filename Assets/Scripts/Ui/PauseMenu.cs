@@ -5,19 +5,17 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pauseMenu;
+    public GameObject menu;
     public static bool isPaused;
     public Button resumeButton;
-
     private void Start()
     {
-        pauseMenu.SetActive(false);
-        isPaused = false;
+        menu.SetActive(false);
         resumeButton.onClick.AddListener(resumeGame);
     }
     private void Update()
     {
-        if (Input.GetButtonDown("Cancel") && isPaused == false) 
+        if (Input.GetButtonDown("Cancel") && isPaused == false)
         {
             pauseGame();
         }else if(Input.GetButtonDown("Cancel") && isPaused == true)
@@ -27,16 +25,17 @@ public class PauseMenu : MonoBehaviour
     }
     void pauseGame()
     {
-        pauseMenu.SetActive(true);
         Time.timeScale = 0;
         Cursor.visible = true;
+        menu.SetActive(true);
         isPaused = true;
+
     }
     void resumeGame()
     {
-        pauseMenu.SetActive(false);
         Time.timeScale = 1;
         Cursor.visible = false;
+        menu.SetActive(false);
         isPaused = false;
     }
 }
