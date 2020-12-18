@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class BroSwitch : MonoBehaviour
 {
@@ -13,9 +14,33 @@ public class BroSwitch : MonoBehaviour
         string file = File.ReadAllText(Application.dataPath + "PlayerSaveData.json");
         plrData = JsonUtility.FromJson<playerData>(file);
         currentBro = plrData.saveBro;
+
     }
     private void Update()
     {
+        if(SceneManager.GetActiveScene().name == "TutE")
+        {
+            currentBro = 2;
+            plrData.saveBro = currentBro;
+            string tojson = JsonUtility.ToJson(plrData);
+            JsonUtility.FromJsonOverwrite(tojson, plrData);
+            File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
+        }else if(SceneManager.GetActiveScene().name == "TutJ")
+        {
+            currentBro = 1;
+            plrData.saveBro = currentBro;
+            string tojson = JsonUtility.ToJson(plrData);
+            JsonUtility.FromJsonOverwrite(tojson, plrData);
+            File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
+        }else if(SceneManager.GetActiveScene().name == "TutL")
+        {
+            currentBro = 3;
+            plrData.saveBro = currentBro;
+            string tojson = JsonUtility.ToJson(plrData);
+            JsonUtility.FromJsonOverwrite(tojson, plrData);
+            File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
+        }
+
         if(currentBro < 3 && Input.GetKeyDown(KeyCode.E))
         {
             currentBro++;
