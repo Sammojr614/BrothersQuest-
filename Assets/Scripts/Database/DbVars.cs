@@ -8,4 +8,5 @@ using UnityEngine;
     public int coins;
     public int health;
     public int lives;
+    public int saveBro;
 }

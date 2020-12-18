@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -10,15 +11,12 @@ public class Health : MonoBehaviour
     public Sprite FullHeart;
     public Sprite HalfHeart;
     public Sprite EmptyHeart;
-    public List<SpriteRenderer> Hearts = new List<SpriteRenderer>();
+    public List<Image> Hearts = new List<Image>();
     public Text lives;
-    private void Start()
+    private void Update()
     {
         string file = File.ReadAllText(Application.dataPath + "PlayerSaveData.json");
         plrData = JsonUtility.FromJson<playerData>(file);
-    }
-    private void Update()
-    {
         lives.text ="x: " + plrData.lives.ToString();
         switch (plrData.health)
         {
@@ -60,6 +58,11 @@ public class Health : MonoBehaviour
             string tojson = JsonUtility.ToJson(plrData);
             JsonUtility.FromJsonOverwrite(tojson, plrData);
             File.WriteAllText(Application.dataPath + "PlayerSaveData.json", tojson);
+        }
+        if(plrData.lives <= 0)
+        {
+            plrData.lives = 0;
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
